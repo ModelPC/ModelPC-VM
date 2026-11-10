@@ -129,6 +129,58 @@ if (downloadStat) {
     setInterval(() => { if (!document.hidden) refresh(); }, 5 * 60_000);
 }
 
+// Ana sayfadaki "nerelerde indiriliyor" bölümü: takip sunucusundan ülke/şehir toplamlarını çeker, 5 dakikada bir yeniler.
+const geo = $('[data-geo]');
+if (geo) {
+    const lang = I18N.lang;
+    const regionNames = 'DisplayNames' in Intl ? new Intl.DisplayNames([lang], { type: 'region' }) : null;
+    const format = new Intl.NumberFormat(lang);
+    const countryName = (code) => {
+        if (!code) return T('js.geo_unknown');
+        try { return regionNames?.of(code) || code; } catch { return code; }
+    };
+    const flag = (code) => (code ? String.fromCodePoint(...[...code].map((c) => 0x1f1e6 + c.charCodeAt(0) - 65)) : '🌐');
+    const renderList = (list, rows, label) => {
+        const max = Math.max(1, ...rows.map((r) => r.downloads));
+        list.replaceChildren(...rows.map((row) => {
+            const li = document.createElement('li');
+            const name = document.createElement('span');
+            name.className = 'geo-name';
+            const icon = document.createElement('span');
+            icon.className = 'geo-flag';
+            icon.setAttribute('aria-hidden', 'true');
+            icon.textContent = flag(row.country);
+            const text = document.createElement('span');
+            text.textContent = label(row);
+            name.append(icon, text);
+            const count = document.createElement('strong');
+            count.textContent = format.format(row.downloads);
+            const bar = document.createElement('span');
+            bar.className = 'geo-bar';
+            bar.style.setProperty('--w', `${Math.max(4, (row.downloads / max) * 100)}%`);
+            li.append(name, count, bar);
+            return li;
+        }));
+    };
+    const load = async () => {
+        try {
+            const res = await fetch(geo.dataset.api);
+            if (!res.ok) throw new Error(String(res.status));
+            const data = await res.json();
+            renderList($('[data-geo-countries]', geo), data.countries, (r) => countryName(r.country));
+            renderList($('[data-geo-cities]', geo), data.cities, (r) => `${r.city}, ${countryName(r.country)}`);
+            const empty = data.countries.length === 0;
+            $('.geo-grid', geo).hidden = empty;
+            $('[data-geo-empty]', geo).hidden = !empty;
+            geo.hidden = false;
+        } catch {
+            // Sunucuya ulaşılamazsa bölüm gizli kalır (ya da son başarılı veriyle görünmeye devam eder).
+        }
+    };
+    load();
+    setInterval(() => { if (!document.hidden) load(); }, 5 * 60_000);
+}
+
 const fold = (text) => text.toLocaleLowerCase(I18N.lang).replace(/ı/g, 'i').normalize('NFD').replace(/\p{M}/gu, '');
 
 // Sürüm listesi araması
