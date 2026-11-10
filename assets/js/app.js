@@ -71,11 +71,10 @@ const isMac = /mac/i.test(navigator.userAgent);
 $$('[data-os-label]').forEach((el) => { el.textContent = T(isMac ? 'js.download_mac' : 'js.download_other'); });
 if (isMac) $('.download-card[data-os="mac-arm"]')?.classList.add('is-current');
 
-// İndirme butonları (gerçek dosya bağlantıları eklenene kadar bildirim gösterir)
+// İndirme butonları: dosya GitHub'dan iner, bu sırada kısa bir bildirim gösterilir.
 $$('[data-download]').forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        toast(T('js.preparing', { file: btn.dataset.download }));
+    btn.addEventListener('click', () => {
+        if (btn.dataset.download) toast(T('js.preparing', { file: btn.dataset.download }));
     });
 });
 
