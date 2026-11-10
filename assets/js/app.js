@@ -80,6 +80,55 @@ $$('[data-download]').forEach((btn) => {
 });
 
 // Arama metinlerini karşılaştırmak için sadeleştirir: büyük/küçük harf, Türkçe ı/i ve aksanlar (ğ→g, é→e) fark etmez.
+// Ana sayfadaki canlı indirme sayacı: GitHub sürümlerindeki toplam indirmeyi çeker ve 5 dakikada bir yeniler.
+const downloadStat = $('[data-download-total]');
+if (downloadStat) {
+    const valueEl = $('[data-download-value]', downloadStat);
+    const format = new Intl.NumberFormat(I18N.lang);
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const CACHE_KEY = 'downloadTotal';
+    let current = 0;
+    const show = (n) => { valueEl.textContent = format.format(n); };
+    if (downloadStat.dataset.value !== '') show(Number(downloadStat.dataset.value));
+
+    const animateTo = (target) => {
+        const from = current;
+        current = target;
+        if (reduceMotion || from === target) { show(target); return; }
+        const start = performance.now();
+        const duration = from === 0 ? 1400 : 800;
+        const step = (now) => {
+            const p = Math.min(1, (now - start) / duration);
+            show(Math.round(from + (target - from) * (1 - (1 - p) ** 3)));
+            if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+    };
+
+    const refresh = async () => {
+        let total;
+        try {
+            const cached = JSON.parse(sessionStorage.getItem(CACHE_KEY) || 'null');
+            if (cached && Date.now() - cached.at < 60_000) total = cached.total;
+        } catch { /* depolama kapalı olabilir */ }
+        try {
+            if (total === undefined) {
+                const res = await fetch(downloadStat.dataset.api, { headers: { Accept: 'application/vnd.github+json' } });
+                if (!res.ok) throw new Error(String(res.status));
+                const releases = await res.json();
+                total = releases.reduce((sum, r) => sum + r.assets.reduce((s, a) => s + a.download_count, 0), 0);
+                try { sessionStorage.setItem(CACHE_KEY, JSON.stringify({ at: Date.now(), total })); } catch { /* yok say */ }
+            }
+            downloadStat.classList.add('is-live');
+            animateTo(total);
+        } catch {
+            downloadStat.classList.remove('is-live');
+        }
+    };
+    refresh();
+    setInterval(() => { if (!document.hidden) refresh(); }, 5 * 60_000);
+}
+
 const fold = (text) => text.toLocaleLowerCase(I18N.lang).replace(/ı/g, 'i').normalize('NFD').replace(/\p{M}/gu, '');
 
 // Sürüm listesi araması
