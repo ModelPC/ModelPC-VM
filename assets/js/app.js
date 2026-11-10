@@ -70,6 +70,7 @@ if ('IntersectionObserver' in window) {
 const isMac = /mac/i.test(navigator.userAgent);
 $$('[data-os-label]').forEach((el) => { el.textContent = T(isMac ? 'js.download_mac' : 'js.download_other'); });
 if (isMac) $('.download-card[data-os="mac-arm"]')?.classList.add('is-current');
+if (/windows/i.test(navigator.userAgent)) $('.download-card[data-os="windows"]')?.classList.add('is-current');
 
 // İndirme butonları: dosya GitHub'dan iner, bu sırada kısa bir bildirim gösterilir.
 $$('[data-download]').forEach((btn) => {

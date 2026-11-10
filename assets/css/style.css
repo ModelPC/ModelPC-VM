@@ -348,6 +348,9 @@ code { font-size: .9em; background: var(--bg-alt); padding: 2px 6px; border-radi
 .release-actions .icon { width: 16px; height: 16px; }
 .tag { padding: 2px 10px; border-radius: 99px; font-size: .75rem; font-weight: 700; }
 .tag-new { color: var(--success); background: color-mix(in srgb, var(--success) 14%, transparent); }
+.tag-soon { color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.download-soon h3 { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.download-soon h3 .icon { width: 20px; height: 20px; color: var(--muted); }
 .release-notes { margin-top: 12px; }
 .release-notes summary { display: inline-flex; align-items: center; gap: 6px; font-size: .88rem; font-weight: 600; color: var(--muted); cursor: pointer; list-style: none; }
 .release-notes summary::-webkit-details-marker { display: none; }
