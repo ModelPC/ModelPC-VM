@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ModelPC VM — Virtuelle Maschinen auf deinem Mac – in einer einfachen Oberfläche.</title>
+    <meta name="description" content="ModelPC VM: Ein schneller und einfacher Manager für virtuelle Maschinen auf dem Mac.">
+            <link rel="alternate" hreflang="tr" href="https://modelpc.github.io/ModelPC-VM/index.html">
+            <link rel="alternate" hreflang="en" href="https://modelpc.github.io/ModelPC-VM/en/index.html">
+            <link rel="alternate" hreflang="de" href="https://modelpc.github.io/ModelPC-VM/de/index.html">
+            <link rel="alternate" hreflang="fr" href="https://modelpc.github.io/ModelPC-VM/fr/index.html">
+            <link rel="alternate" hreflang="es" href="https://modelpc.github.io/ModelPC-VM/es/index.html">
+            <link rel="alternate" hreflang="it" href="https://modelpc.github.io/ModelPC-VM/it/index.html">
+            <link rel="alternate" hreflang="da" href="https://modelpc.github.io/ModelPC-VM/da/index.html">
+            <link rel="alternate" hreflang="pt" href="https://modelpc.github.io/ModelPC-VM/pt/index.html">
+            <link rel="alternate" hreflang="ru" href="https://modelpc.github.io/ModelPC-VM/ru/index.html">
+            <link rel="alternate" hreflang="ar" href="https://modelpc.github.io/ModelPC-VM/ar/index.html">
+            <link rel="alternate" hreflang="zh" href="https://modelpc.github.io/ModelPC-VM/zh/index.html">
+            <link rel="alternate" hreflang="ja" href="https://modelpc.github.io/ModelPC-VM/ja/index.html">
+            <link rel="alternate" hreflang="ko" href="https://modelpc.github.io/ModelPC-VM/ko/index.html">
+        <link rel="alternate" hreflang="x-default" href="https://modelpc.github.io/ModelPC-VM/index.html">
+    <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css?v=1793889988">
+    <script>
+        // Tema, sayfa çizilmeden önce uygulanır; böylece açılışta renk yanıp sönmez.
+        try {
+            const saved = localStorage.getItem('theme');
+            if (saved) document.documentElement.dataset.theme = saved;
+        } catch (e) {}
+    </script>
+    </head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="site-header" data-header>
+    <div class="container nav">
+        <a class="brand" href="../de/index.html" aria-label="ModelPC VM Startseite">
+            <img src="../assets/img/logo.svg" alt="" width="32" height="32">
+            <span>ModelPC VM</span>
+        </a>
+
+        <nav class="nav-links" id="nav-links" aria-label="Hauptmenü">
+                            <a href="../de/index.html" aria-current="page">Startseite</a>
+                            <a href="../de/ozellikler.html" >Funktionen</a>
+                            <a href="../de/fiyatlar.html" >Preise</a>
+                            <a href="../de/indir.html" >Download</a>
+                            <a href="../de/destek.html" >Support</a>
+                            <a href="../de/iletisim.html" >Kontakt</a>
+                                </nav>
+
+        <div class="nav-actions">
+            <details class="lang-menu" data-lang-menu>
+                <summary class="icon-btn lang-btn" aria-label="Sprache: Deutsch">
+                    <svg class="flag" viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="5" height="3" fill="#FFCE00"/><rect width="5" height="2" fill="#DD0000"/><rect width="5" height="1" fill="#000"/></svg><span class="lang-code">DE</span>
+                </summary>
+                <ul class="lang-list" role="list">
+                                            <li>
+                            <a href="../index.html" hreflang="tr" lang="tr" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="1200" height="800" fill="#E30A17"/><circle cx="425" cy="400" r="200" fill="#fff"/><circle cx="475" cy="400" r="160" fill="#E30A17"/><polygon fill="#fff" points="533.33,400.00 602.43,377.55 602.43,304.89 645.13,363.67 714.23,341.22 671.53,400.00 714.23,458.78 645.13,436.33 602.43,495.11 602.43,422.45"/></svg>Türkçe</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../en/index.html" hreflang="en" lang="en" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L30,15 M60,30 L30,15 M60,0 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>English</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../de/index.html" hreflang="de" lang="de" dir="ltr"
+                               aria-current="true">
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="5" height="3" fill="#FFCE00"/><rect width="5" height="2" fill="#DD0000"/><rect width="5" height="1" fill="#000"/></svg>Deutsch</span>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>                            </a>
+                        </li>
+                                            <li>
+                            <a href="../fr/index.html" hreflang="fr" lang="fr" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="3" height="2" fill="#EF4135"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#0055A4"/></svg>Français</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../es/index.html" hreflang="es" lang="es" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="3" height="2" fill="#AA151B"/><rect y=".5" width="3" height="1" fill="#F1BF00"/></svg>Español</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../it/index.html" hreflang="it" lang="it" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="3" height="2" fill="#CE2B37"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#009246"/></svg>Italiano</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../da/index.html" hreflang="da" lang="da" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 37 28" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="37" height="28" fill="#C8102E"/><rect x="12" width="4" height="28" fill="#fff"/><rect y="12" width="37" height="4" fill="#fff"/></svg>Dansk</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../pt/index.html" hreflang="pt" lang="pt" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 100 70" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100" height="70" fill="#009C3B"/><polygon points="50,7 93,35 50,63 7,35" fill="#FFDF00"/><circle cx="50" cy="35" r="17" fill="#002776"/><path d="M33.5,31 Q50,26 66.8,37" stroke="#fff" stroke-width="3" fill="none"/></svg>Português</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../ru/index.html" hreflang="ru" lang="ru" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 9 6" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="9" height="6" fill="#D52B1E"/><rect width="9" height="4" fill="#0039A6"/><rect width="9" height="2" fill="#fff"/></svg>Русский</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../ar/index.html" hreflang="ar" lang="ar" dir="rtl"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 150 100" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="150" height="100" fill="#006C35"/><path d="M38,40 q6,-10 12,0 t12,0 t12,0 t12,0 t12,0 t12,0" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M45,64 H108" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M45,64 l-6,-5 M108,60 v8" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>العربية</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../zh/index.html" hreflang="zh" lang="zh" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="30" height="20" fill="#EE1C25"/><polygon fill="#FFFF00" points="5.00,2.00 5.67,4.07 7.85,4.07 6.09,5.35 6.76,7.43 5.00,6.15 3.24,7.43 3.91,5.35 2.15,4.07 4.33,4.07"/><polygon fill="#FFFF00" points="9.14,2.51 9.62,1.97 9.25,1.34 9.91,1.63 10.39,1.08 10.33,1.80 11.00,2.09 10.29,2.25 10.22,2.97 9.85,2.35"/><polygon fill="#FFFF00" points="11.01,4.14 11.66,3.82 11.56,3.10 12.07,3.62 12.72,3.30 12.38,3.95 12.88,4.47 12.17,4.34 11.83,4.99 11.73,4.27"/><polygon fill="#FFFF00" points="11.04,6.73 11.76,6.70 11.96,6.00 12.21,6.68 12.94,6.66 12.37,7.10 12.62,7.79 12.01,7.38 11.44,7.83 11.64,7.13"/><polygon fill="#FFFF00" points="9.22,8.38 9.90,8.63 10.35,8.06 10.32,8.79 11.00,9.05 10.30,9.24 10.26,9.96 9.87,9.36 9.16,9.55 9.62,8.98"/></svg>中文</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../ja/index.html" hreflang="ja" lang="ja" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="3" height="2" fill="#fff"/><circle cx="1.5" cy="1" r=".6" fill="#BC002D"/></svg>日本語</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../ko/index.html" hreflang="ko" lang="ko" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="200" fill="#fff"/><g transform="rotate(33.69 150 100)"><path d="M100,100 a50,50 0 0 1 100,0 z" fill="#CD2E3A"/><path d="M100,100 a50,50 0 0 0 100,0 z" fill="#0047A0"/><circle cx="125" cy="100" r="25" fill="#CD2E3A"/><circle cx="175" cy="100" r="25" fill="#0047A0"/></g><g fill="#000"><g transform="translate(70.96435839760416 47.289779392440074) rotate(56.3)"><rect x="-25" y="-16" width="50" height="8"/><rect x="-25" y="-4" width="50" height="8"/><rect x="-25" y="8" width="50" height="8"/></g><g transform="translate(229.03564160239586 152.71022060755993) rotate(56.3)"><rect x="-25" y="-16" width="22" height="8"/><rect x="3" y="-16" width="22" height="8"/><rect x="-25" y="-4" width="22" height="8"/><rect x="3" y="-4" width="22" height="8"/><rect x="-25" y="8" width="22" height="8"/><rect x="3" y="8" width="22" height="8"/></g><g transform="translate(229.03564160239586 47.28977939244006) rotate(-56.3)"><rect x="-25" y="-16" width="22" height="8"/><rect x="3" y="-16" width="22" height="8"/><rect x="-25" y="-4" width="50" height="8"/><rect x="-25" y="8" width="22" height="8"/><rect x="3" y="8" width="22" height="8"/></g><g transform="translate(70.96435839760416 152.71022060755993) rotate(-56.3)"><rect x="-25" y="-16" width="50" height="8"/><rect x="-25" y="-4" width="22" height="8"/><rect x="3" y="-4" width="22" height="8"/><rect x="-25" y="8" width="50" height="8"/></g></g></svg>한국어</span>
+                                                            </a>
+                        </li>
+                                    </ul>
+            </details>
+            <button class="icon-btn" type="button" data-theme-toggle aria-label="Design wechseln">
+                <span class="theme-icon-light"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+                <span class="theme-icon-dark"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></span>
+            </button>
+                        <a class="btn btn-primary btn-sm hide-mobile" href="../de/indir.html" title="Download"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> <span class="btn-label">Download</span></a>
+            <button class="icon-btn show-mobile" type="button" data-menu-toggle aria-controls="nav-links" aria-expanded="false" aria-label="Menü öffnen">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>            </button>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-copy fade-up">
+            <span class="badge"><span class="dot"></span> Neu: Version 2.4.0 ist da</span>
+            <h1><span class="gradient-text">Unbegrenzt viele Computer</span> auf deinem Mac.</h1>
+            <p class="lead">Mit ModelPC VM führst du Ubuntu und andere Systeme in virtuellen Maschinen auf deinem Mac aus. Live-Leistungsdiagramme, Snapshots, ISO-Images und ein integriertes Terminal – alles in einer einfachen Oberfläche.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary btn-lg" href="../de/indir.html" data-os-download>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> <span data-os-label>Kostenlos herunterladen</span>
+                </a>
+                <a class="btn btn-github btn-lg" href="https://github.com/ModelPC/ModelPC-VM" target="_blank" rel="noopener">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-7a5.4 5.4 0 0 0-1.5-3.8 5 5 0 0 0-.1-3.8s-1.2-.4-3.9 1.5a13.4 13.4 0 0 0-7 0C6.3 1.5 5.1 1.9 5.1 1.9a5 5 0 0 0-.1 3.8 5.4 5.4 0 0 0-1.5 3.8c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/></svg> Auf GitHub ansehen                </a>
+            </div>
+            <p class="hero-note muted">Für Apple Silicon · Kostenloser Plan · <a class="link-arrow" href="../de/ozellikler.html">Funktionen entdecken <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
+        </div>
+
+        <div class="hero-visual fade-up delay">
+                        <div class="app-window" aria-hidden="true" dir="ltr">
+                <div class="app-titlebar">
+                    <span class="tl red"></span><span class="tl yellow"></span><span class="tl green"></span>
+                    <span class="app-title">Virtual Machine Manager</span>
+                </div>
+                <div class="app-body">
+                    <aside class="app-sidebar">
+                        <small class="side-group">Virtualisierung</small>
+                        <div class="vm-item active"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14 15.5 10.5"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg>Dashboard</div>
+                        <div class="vm-item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Virtuelle Maschinen</div>
+                        <div class="vm-item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>Neue VM erstellen</div>
+                        <small class="side-group">Verwaltung</small>
+                        <div class="vm-item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12H2"/><path d="M5.5 5h13L22 12v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6z"/><path d="M6 16h.01M10 16h.01"/></svg>Speicher</div>
+                        <div class="vm-item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7l10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>Snapshots</div>
+                        <div class="vm-item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2"/></svg>ISO-Images</div>
+                        <div class="vm-item"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m6 9 3 3-3 3M12 15h6"/></svg>Terminal</div>
+                    </aside>
+                    <div class="app-main">
+                        <div class="app-banner">
+                            <strong>Dashboard</strong>
+                            <small>MacBook Air · 8 Kerne · 8 GB</small>
+                            <span class="banner-btn">+ Neue virtuelle Maschine</span>
+                        </div>
+                        <div class="res-grid">
+                            <div class="res"><span class="ring" style="--p:16;--c:#3b82f6">16%</span><div><small>CPU</small><b>15.8%</b></div></div>
+                            <div class="res"><span class="ring" style="--p:68;--c:#d946ef">68%</span><div><small>Speicher</small><b>5.4 GB</b></div></div>
+                            <div class="res"><span class="ring" style="--p:86;--c:#f97316">86%</span><div><small>Disk</small><b>210 GB</b></div></div>
+                            <div class="res"><span class="ring" style="--p:4;--c:#22c55e">0%</span><div><small>Netzwerk</small><b>3 KB/s</b></div></div>
+                        </div>
+                        <div class="perf">
+                            <small>Live-Leistung</small>
+                            <svg viewBox="0 0 300 70" preserveAspectRatio="none">
+                                <defs><linearGradient id="pf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b82f6" stop-opacity=".45"/><stop offset="1" stop-color="#3b82f6" stop-opacity="0"/></linearGradient></defs>
+                                <path class="perf-line" d="M0 50 C20 38 40 36 60 44 S90 18 110 30 140 52 165 48 190 20 210 34 240 54 262 30 285 50 300 46" fill="none" stroke="#3b82f6" stroke-width="2"/>
+                                <path d="M0 50 C20 38 40 36 60 44 S90 18 110 30 140 52 165 48 190 20 210 34 240 54 262 30 285 50 300 46 V70 H0Z" fill="url(#pf)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="container stats-grid">
+                    <div class="stat reveal">
+                <strong>Apple Silicon</strong>
+                <span>Native arm64-Unterstützung</span>
+            </div>
+                    <div class="stat reveal">
+                <strong>Live</strong>
+                <span>Leistungsdiagramme</span>
+            </div>
+                    <div class="stat reveal">
+                <strong>1 Klick</strong>
+                <span>Snapshot und Wiederherstellung</span>
+            </div>
+                    <div class="stat reveal">
+                <strong>Kostenlos</strong>
+                <span>Plan für den Einstieg</span>
+            </div>
+            </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">Warum ModelPC VM?</span>
+            <h2>Virtualisierung war noch nie so einfach</h2>
+            <p class="muted">Keine komplizierten Einstellungen. Alles, was du brauchst, in einer klaren Oberfläche.</p>
+        </div>
+        <div class="card-grid">
+                            <article class="card reveal">
+                    <div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14 15.5 10.5"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg></div>
+                    <h3>Dashboard</h3>
+                    <p class="muted">Verfolge CPU-, Speicher-, Festplatten- und Netzwerkauslastung in Live-Diagrammen und sieh den Status aller virtuellen Maschinen auf einem Bildschirm.</p>
+                </article>
+                            <article class="card reveal">
+                    <div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+                    <h3>Virtuelle Maschinen</h3>
+                    <p class="muted">Starte, pausiere, stoppe oder starte deine Maschinen mit einem Klick neu. Finde sie sofort über die Suche.</p>
+                </article>
+                            <article class="card reveal">
+                    <div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+                    <h3>Assistent für neue VMs</h3>
+                    <p class="muted">Wähle deine ISO, lege vCPU, Arbeitsspeicher und Festplattengröße fest – der Assistent erledigt den Rest.</p>
+                </article>
+                    </div>
+        <p class="center"><a class="link-arrow" href="../de/ozellikler.html">Alle Funktionen ansehen <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="eyebrow">So funktioniert’s</span>
+            <h2>Deine erste virtuelle Maschine in drei Schritten</h2>
+        </div>
+        <ol class="steps">
+                            <li class="step reveal">
+                    <span class="step-num">1</span>
+                    <h3>Herunterladen und installieren</h3>
+                    <p class="muted">Lade die DMG-Datei herunter und ziehe die App in den Ordner „Programme“.</p>
+                </li>
+                            <li class="step reveal">
+                    <span class="step-num">2</span>
+                    <h3>ISO auswählen</h3>
+                    <p class="muted">Durchsuche fertige ISO-Images oder füge deine eigene ISO-Datei hinzu.</p>
+                </li>
+                            <li class="step reveal">
+                    <span class="step-num">3</span>
+                    <h3>Starten</h3>
+                    <p class="muted">Weise vCPU, Arbeitsspeicher und Festplatte zu und klicke auf „Neue virtuelle Maschine“. Fertig.</p>
+                </li>
+                    </ol>
+    </div>
+</section>
+
+<section class="section" id="sss" data-help-section>
+    <div class="container narrow">
+        <div class="section-head reveal">
+            <span class="eyebrow">Häufige Fragen</span>
+            <h2>Was du wissen möchtest</h2>
+        </div>
+        <div class="faq">
+                            <details class="faq-item reveal" data-help-item>
+                    <summary>Auf welchen Macs läuft ModelPC VM? <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <p class="muted">Es läuft nativ auf Macs mit Apple Silicon (M-Serie). Eine aktuelle macOS-Version wird empfohlen.</p>
+                </details>
+                            <details class="faq-item reveal" data-help-item>
+                    <summary>Welche Systeme kann ich in einer VM installieren? <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <p class="muted">Du kannst arm64-Linux-Distributionen – allen voran Ubuntu – aus einem ISO-Image installieren. Im Bereich ISO-Images findest du auch fertige Images.</p>
+                </details>
+                            <details class="faq-item reveal" data-help-item>
+                    <summary>Reicht meine Hardware aus? <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <p class="muted">Mindestens 8 GB RAM genügen. Das Dashboard zeigt CPU-, Speicher- und Festplattenauslastung deines Macs, sodass du Ressourcen leicht aufteilen kannst.</p>
+                </details>
+                            <details class="faq-item reveal" data-help-item>
+                    <summary>Was ist ein Snapshot? <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <p class="muted">Ein gespeicherter Zustand der virtuellen Maschine zu einem bestimmten Zeitpunkt. Geht etwas schief, stellst du ihn in Sekunden wieder her.</p>
+                </details>
+                            <details class="faq-item reveal" data-help-item>
+                    <summary>Wie erhalte ich Updates? <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                    <p class="muted">Über „Nach Updates suchen“ unten links in der App findest du die neue Version und installierst sie mit einem Klick.</p>
+                </details>
+                    </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="cta reveal">
+            <h2>Erstelle noch heute deine erste virtuelle Maschine</h2>
+            <p>Starte sofort mit dem kostenlosen Plan und wechsle, wenn du mehr brauchst.</p>
+            <div class="hero-actions center-actions">
+                <a class="btn btn-light btn-lg" href="../de/indir.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Für Mac herunterladen</a>
+                <a class="btn btn-outline-light btn-lg" href="../de/fiyatlar.html">Pläne vergleichen</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="brand" href="../de/index.html">
+                <img src="../assets/img/logo.svg" alt="" width="28" height="28">
+                <span>ModelPC VM</span>
+            </a>
+            <p class="muted">Virtuelle Maschinen auf deinem Mac – in einer einfachen Oberfläche.</p>
+        </div>
+        <div>
+            <h4>Produkt</h4>
+            <a href="../de/ozellikler.html">Funktionen</a>
+            <a href="../de/fiyatlar.html">Preise</a>
+            <a href="../de/indir.html">Download</a>
+        </div>
+        <div>
+            <h4>Support</h4>
+            <a href="../de/destek.html">Support</a>
+            <a href="../de/destek.html#sss">Häufige Fragen</a>
+            <a href="../de/iletisim.html">Kontakt</a>
+                            <a href="mailto:destek@modelpc.app" dir="ltr">destek@modelpc.app</a>
+                            <a href="mailto:modelpc91@gmail.com" dir="ltr">modelpc91@gmail.com</a>
+                    </div>
+    </div>
+    <div class="container footer-bottom">
+        <span>© 2026 ModelPC VM. Alle Rechte vorbehalten.</span>
+        <span>Version 2.4.0</span>
+    </div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite" data-toast></div>
+<script>window.I18N = {"lang":"de","strings":{"pricing.billed_monthly":"Monatliche Abrechnung","pricing.billed_yearly":"Jährliche Abrechnung","download.count":"{count} Versionen","error.session":"Deine Sitzung ist abgelaufen. Bitte sende das Formular erneut.","error.failed":"Die Nachricht konnte nicht gesendet werden.","error.name":"Bitte gib deinen Namen ein.","error.email":"Bitte gib eine gültige E-Mail-Adresse ein.","error.topic":"Bitte wähle ein Thema.","error.message":"Deine Nachricht muss mindestens 10 Zeichen lang sein.","error.password_min":"Das Passwort muss mindestens {min} Zeichen lang sein.","error.password_empty":"Bitte gib dein Passwort ein.","error.terms":"Bitte akzeptiere die Bedingungen, um fortzufahren.","error.email_taken":"Für diese E-Mail gibt es bereits ein Konto. Versuche, dich anzumelden.","error.login":"E-Mail oder Passwort ist falsch.","error.login_empty":"Gib deine E-Mail und dein Passwort ein.","error.locked":"Zu viele Fehlversuche. Bitte versuche es in {minutes} Minuten erneut.","auth.show":"Passwort anzeigen","auth.hide":"Passwort verbergen","js.download_mac":"Kostenlos für Mac laden","js.download_other":"Für macOS herunterladen","js.preparing":"{file} wird zum Download vorbereitet…","js.sending":"Wird gesendet…","js.strength":["Mindestens 8 Zeichen","Schwach","Mittel","Gut","Stark"],"error.400.title":"Ungültige Anfrage","error.400.heading":"Die Anfrage konnte nicht verarbeitet werden","error.400.text":"Die von Ihrem Browser gesendete Anfrage ist fehlerhaft oder unvollständig. Prüfen Sie die Adresse und öffnen Sie die Seite erneut.","error.400.term":"malformed request","error.401.title":"Anmeldung erforderlich","error.401.heading":"Bitte melden Sie sich an, um diese Seite zu sehen","error.401.text":"Melden Sie sich bei Ihrem Konto an, um fortzufahren. Ihre Sitzung ist möglicherweise abgelaufen.","error.401.term":"authentication required","error.403.title":"Zugriff verweigert","error.403.heading":"Sie haben keinen Zugriff auf diese Seite","error.403.text":"Sie sind nicht berechtigt, diesen Inhalt anzuzeigen. Wenn Sie einen Fehler vermuten, kontaktieren Sie uns.","error.403.term":"permission denied","error.503.title":"Wartungsarbeiten","error.503.heading":"Wir führen kurze Wartungsarbeiten durch","error.503.text":"Der Dienst ist vorübergehend nicht verfügbar. Bitte versuchen Sie es in ein paar Minuten erneut – Ihre Daten sind sicher.","error.503.term":"service unavailable"}};</script>
+<script src="../assets/js/app.js?v=1794313971" defer></script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>기능 · ModelPC VM</title>
+    <meta name="description" content="ModelPC VM: Mac을 위한 빠르고 간단한 가상 머신 관리자.">
+            <link rel="alternate" hreflang="tr" href="https://modelpc.github.io/ModelPC-VM/ozellikler.html">
+            <link rel="alternate" hreflang="en" href="https://modelpc.github.io/ModelPC-VM/en/ozellikler.html">
+            <link rel="alternate" hreflang="de" href="https://modelpc.github.io/ModelPC-VM/de/ozellikler.html">
+            <link rel="alternate" hreflang="fr" href="https://modelpc.github.io/ModelPC-VM/fr/ozellikler.html">
+            <link rel="alternate" hreflang="es" href="https://modelpc.github.io/ModelPC-VM/es/ozellikler.html">
+            <link rel="alternate" hreflang="it" href="https://modelpc.github.io/ModelPC-VM/it/ozellikler.html">
+            <link rel="alternate" hreflang="da" href="https://modelpc.github.io/ModelPC-VM/da/ozellikler.html">
+            <link rel="alternate" hreflang="pt" href="https://modelpc.github.io/ModelPC-VM/pt/ozellikler.html">
+            <link rel="alternate" hreflang="ru" href="https://modelpc.github.io/ModelPC-VM/ru/ozellikler.html">
+            <link rel="alternate" hreflang="ar" href="https://modelpc.github.io/ModelPC-VM/ar/ozellikler.html">
+            <link rel="alternate" hreflang="zh" href="https://modelpc.github.io/ModelPC-VM/zh/ozellikler.html">
+            <link rel="alternate" hreflang="ja" href="https://modelpc.github.io/ModelPC-VM/ja/ozellikler.html">
+            <link rel="alternate" hreflang="ko" href="https://modelpc.github.io/ModelPC-VM/ko/ozellikler.html">
+        <link rel="alternate" hreflang="x-default" href="https://modelpc.github.io/ModelPC-VM/ozellikler.html">
+    <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css?v=1793889988">
+    <script>
+        // Tema, sayfa çizilmeden önce uygulanır; böylece açılışta renk yanıp sönmez.
+        try {
+            const saved = localStorage.getItem('theme');
+            if (saved) document.documentElement.dataset.theme = saved;
+        } catch (e) {}
+    </script>
+    </head>
+<body>
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<header class="site-header" data-header>
+    <div class="container nav">
+        <a class="brand" href="../ko/index.html" aria-label="ModelPC VM 홈">
+            <img src="../assets/img/logo.svg" alt="" width="32" height="32">
+            <span>ModelPC VM</span>
+        </a>
+
+        <nav class="nav-links" id="nav-links" aria-label="주 메뉴">
+                            <a href="../ko/index.html" >홈</a>
+                            <a href="../ko/ozellikler.html" aria-current="page">기능</a>
+                            <a href="../ko/fiyatlar.html" >요금</a>
+                            <a href="../ko/indir.html" >다운로드</a>
+                            <a href="../ko/destek.html" >지원</a>
+                            <a href="../ko/iletisim.html" >문의</a>
+                                </nav>
+
+        <div class="nav-actions">
+            <details class="lang-menu" data-lang-menu>
+                <summary class="icon-btn lang-btn" aria-label="언어: 한국어">
+                    <svg class="flag" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="200" fill="#fff"/><g transform="rotate(33.69 150 100)"><path d="M100,100 a50,50 0 0 1 100,0 z" fill="#CD2E3A"/><path d="M100,100 a50,50 0 0 0 100,0 z" fill="#0047A0"/><circle cx="125" cy="100" r="25" fill="#CD2E3A"/><circle cx="175" cy="100" r="25" fill="#0047A0"/></g><g fill="#000"><g transform="translate(70.96435839760416 47.289779392440074) rotate(56.3)"><rect x="-25" y="-16" width="50" height="8"/><rect x="-25" y="-4" width="50" height="8"/><rect x="-25" y="8" width="50" height="8"/></g><g transform="translate(229.03564160239586 152.71022060755993) rotate(56.3)"><rect x="-25" y="-16" width="22" height="8"/><rect x="3" y="-16" width="22" height="8"/><rect x="-25" y="-4" width="22" height="8"/><rect x="3" y="-4" width="22" height="8"/><rect x="-25" y="8" width="22" height="8"/><rect x="3" y="8" width="22" height="8"/></g><g transform="translate(229.03564160239586 47.28977939244006) rotate(-56.3)"><rect x="-25" y="-16" width="22" height="8"/><rect x="3" y="-16" width="22" height="8"/><rect x="-25" y="-4" width="50" height="8"/><rect x="-25" y="8" width="22" height="8"/><rect x="3" y="8" width="22" height="8"/></g><g transform="translate(70.96435839760416 152.71022060755993) rotate(-56.3)"><rect x="-25" y="-16" width="50" height="8"/><rect x="-25" y="-4" width="22" height="8"/><rect x="3" y="-4" width="22" height="8"/><rect x="-25" y="8" width="50" height="8"/></g></g></svg><span class="lang-code">KO</span>
+                </summary>
+                <ul class="lang-list" role="list">
+                                            <li>
+                            <a href="../ozellikler.html" hreflang="tr" lang="tr" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="1200" height="800" fill="#E30A17"/><circle cx="425" cy="400" r="200" fill="#fff"/><circle cx="475" cy="400" r="160" fill="#E30A17"/><polygon fill="#fff" points="533.33,400.00 602.43,377.55 602.43,304.89 645.13,363.67 714.23,341.22 671.53,400.00 714.23,458.78 645.13,436.33 602.43,495.11 602.43,422.45"/></svg>Türkçe</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../en/ozellikler.html" hreflang="en" lang="en" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L30,15 M60,30 L30,15 M60,0 L30,15 M0,30 L30,15" stroke="#C8102E" stroke-width="2"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg>English</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../de/ozellikler.html" hreflang="de" lang="de" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="5" height="3" fill="#FFCE00"/><rect width="5" height="2" fill="#DD0000"/><rect width="5" height="1" fill="#000"/></svg>Deutsch</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../fr/ozellikler.html" hreflang="fr" lang="fr" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="3" height="2" fill="#EF4135"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#0055A4"/></svg>Français</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../es/ozellikler.html" hreflang="es" lang="es" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="3" height="2" fill="#AA151B"/><rect y=".5" width="3" height="1" fill="#F1BF00"/></svg>Español</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../it/ozellikler.html" hreflang="it" lang="it" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="3" height="2" fill="#CE2B37"/><rect width="2" height="2" fill="#fff"/><rect width="1" height="2" fill="#009246"/></svg>Italiano</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../da/ozellikler.html" hreflang="da" lang="da" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 37 28" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="37" height="28" fill="#C8102E"/><rect x="12" width="4" height="28" fill="#fff"/><rect y="12" width="37" height="4" fill="#fff"/></svg>Dansk</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../pt/ozellikler.html" hreflang="pt" lang="pt" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 100 70" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100" height="70" fill="#009C3B"/><polygon points="50,7 93,35 50,63 7,35" fill="#FFDF00"/><circle cx="50" cy="35" r="17" fill="#002776"/><path d="M33.5,31 Q50,26 66.8,37" stroke="#fff" stroke-width="3" fill="none"/></svg>Português</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../ru/ozellikler.html" hreflang="ru" lang="ru" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 9 6" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="9" height="6" fill="#D52B1E"/><rect width="9" height="4" fill="#0039A6"/><rect width="9" height="2" fill="#fff"/></svg>Русский</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../ar/ozellikler.html" hreflang="ar" lang="ar" dir="rtl"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 150 100" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="150" height="100" fill="#006C35"/><path d="M38,40 q6,-10 12,0 t12,0 t12,0 t12,0 t12,0 t12,0" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M45,64 H108" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M45,64 l-6,-5 M108,60 v8" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>العربية</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../zh/ozellikler.html" hreflang="zh" lang="zh" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="30" height="20" fill="#EE1C25"/><polygon fill="#FFFF00" points="5.00,2.00 5.67,4.07 7.85,4.07 6.09,5.35 6.76,7.43 5.00,6.15 3.24,7.43 3.91,5.35 2.15,4.07 4.33,4.07"/><polygon fill="#FFFF00" points="9.14,2.51 9.62,1.97 9.25,1.34 9.91,1.63 10.39,1.08 10.33,1.80 11.00,2.09 10.29,2.25 10.22,2.97 9.85,2.35"/><polygon fill="#FFFF00" points="11.01,4.14 11.66,3.82 11.56,3.10 12.07,3.62 12.72,3.30 12.38,3.95 12.88,4.47 12.17,4.34 11.83,4.99 11.73,4.27"/><polygon fill="#FFFF00" points="11.04,6.73 11.76,6.70 11.96,6.00 12.21,6.68 12.94,6.66 12.37,7.10 12.62,7.79 12.01,7.38 11.44,7.83 11.64,7.13"/><polygon fill="#FFFF00" points="9.22,8.38 9.90,8.63 10.35,8.06 10.32,8.79 11.00,9.05 10.30,9.24 10.26,9.96 9.87,9.36 9.16,9.55 9.62,8.98"/></svg>中文</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../ja/ozellikler.html" hreflang="ja" lang="ja" dir="ltr"
+                               >
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="3" height="2" fill="#fff"/><circle cx="1.5" cy="1" r=".6" fill="#BC002D"/></svg>日本語</span>
+                                                            </a>
+                        </li>
+                                            <li>
+                            <a href="../ko/ozellikler.html" hreflang="ko" lang="ko" dir="ltr"
+                               aria-current="true">
+                                <span class="lang-name"><svg class="flag" viewBox="0 0 300 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="200" fill="#fff"/><g transform="rotate(33.69 150 100)"><path d="M100,100 a50,50 0 0 1 100,0 z" fill="#CD2E3A"/><path d="M100,100 a50,50 0 0 0 100,0 z" fill="#0047A0"/><circle cx="125" cy="100" r="25" fill="#CD2E3A"/><circle cx="175" cy="100" r="25" fill="#0047A0"/></g><g fill="#000"><g transform="translate(70.96435839760416 47.289779392440074) rotate(56.3)"><rect x="-25" y="-16" width="50" height="8"/><rect x="-25" y="-4" width="50" height="8"/><rect x="-25" y="8" width="50" height="8"/></g><g transform="translate(229.03564160239586 152.71022060755993) rotate(56.3)"><rect x="-25" y="-16" width="22" height="8"/><rect x="3" y="-16" width="22" height="8"/><rect x="-25" y="-4" width="22" height="8"/><rect x="3" y="-4" width="22" height="8"/><rect x="-25" y="8" width="22" height="8"/><rect x="3" y="8" width="22" height="8"/></g><g transform="translate(229.03564160239586 47.28977939244006) rotate(-56.3)"><rect x="-25" y="-16" width="22" height="8"/><rect x="3" y="-16" width="22" height="8"/><rect x="-25" y="-4" width="50" height="8"/><rect x="-25" y="8" width="22" height="8"/><rect x="3" y="8" width="22" height="8"/></g><g transform="translate(70.96435839760416 152.71022060755993) rotate(-56.3)"><rect x="-25" y="-16" width="50" height="8"/><rect x="-25" y="-4" width="22" height="8"/><rect x="3" y="-4" width="22" height="8"/><rect x="-25" y="8" width="50" height="8"/></g></g></svg>한국어</span>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>                            </a>
+                        </li>
+                                    </ul>
+            </details>
+            <button class="icon-btn" type="button" data-theme-toggle aria-label="테마 전환">
+                <span class="theme-icon-light"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+                <span class="theme-icon-dark"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></span>
+            </button>
+                        <a class="btn btn-primary btn-sm hide-mobile" href="../ko/indir.html" title="다운로드"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> <span class="btn-label">다운로드</span></a>
+            <button class="icon-btn show-mobile" type="button" data-menu-toggle aria-controls="nav-links" aria-expanded="false" aria-label="메뉴 열기">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>            </button>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+
+<section class="page-hero">
+    <div class="container narrow center reveal">
+        <span class="eyebrow">기능</span>
+        <h1>강력하지만 복잡하지 않게</h1>
+        <p class="lead">전문 가상화 도구의 성능을 누구나 쓸 수 있는 화면에 담았습니다.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container card-grid">
+                    <article class="card reveal">
+                <div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 14 15.5 10.5"/><path d="M3.3 19a10 10 0 1 1 17.4 0"/></svg></div>
+                <h3>대시보드</h3>
+                <p class="muted">CPU, 메모리, 디스크, 네트워크 사용량을 실시간 그래프로 확인하고 모든 가상 머신의 상태를 한 화면에서 보세요.</p>
+            </article>
+                    <article class="card reveal">
+                <div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+                <h3>가상 머신</h3>
+                <p class="muted">클릭 한 번으로 시작, 일시 정지, 중지, 재시작할 수 있고 검색으로 바로 찾을 수 있습니다.</p>
+            </article>
+                    <article class="card reveal">
+                <div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+                <h3>새 VM 마법사</h3>
+                <p class="muted">ISO를 고르고 vCPU, 메모리, 디스크 크기만 정하면 나머지는 마법사가 처리합니다.</p>
+            </article>
+                    <article class="card reveal">
+                <div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7l10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></div>
+                <h3>스냅샷</h3>
+                <p class="muted">중요한 변경 전에 스냅샷을 찍어 두면 문제가 생겨도 몇 초 만에 되돌릴 수 있습니다.</p>
+            </article>
+                    <article class="card reveal">
+                <div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2"/></svg></div>
+                <h3>ISO 이미지</h3>
+                <p class="muted">Ubuntu 등 여러 시스템의 ISO 이미지를 한곳에서 관리하고 준비된 이미지를 둘러보세요.</p>
+            </article>
+                    <article class="card reveal">
+                <div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m6 9 3 3-3 3M12 15h6"/></svg></div>
+                <h3>내장 터미널</h3>
+                <p class="muted">앱 안에서 바로 터미널로 가상 머신에 접속하세요.</p>
+            </article>
+                    <article class="card reveal">
+                <div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12H2"/><path d="M5.5 5h13L22 12v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6z"/><path d="M6 16h.01M10 16h.01"/></svg></div>
+                <h3>저장 공간</h3>
+                <p class="muted">가상 디스크가 차지하는 공간을 확인하고 Mac의 디스크를 관리하세요.</p>
+            </article>
+                    <article class="card reveal">
+                <div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg></div>
+                <h3>네트워크 인터페이스</h3>
+                <p class="muted">가상 머신의 네트워크 연결을 설정하고 트래픽을 실시간으로 확인하세요.</p>
+            </article>
+                    <article class="card reveal">
+                <div class="card-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg></div>
+                <h3>서버에 연결</h3>
+                <p class="muted">원격 서버의 가상 머신도 같은 화면에서 관리하세요.</p>
+            </article>
+            </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container narrow">
+        <div class="section-head reveal">
+            <span class="eyebrow">비교</span>
+            <h2>나에게 맞는 요금제는?</h2>
+        </div>
+        <div class="table-wrap reveal">
+            <table class="compare">
+                <thead>
+                    <tr><th scope="col">기능</th><th scope="col">무료</th><th scope="col">Pro</th><th scope="col">팀</th></tr>
+                </thead>
+                <tbody>
+                                            <tr>
+                            <th scope="row">가상 머신</th>
+                                                            <td>
+                                    2                                </td>
+                                                            <td>
+                                    무제한                                </td>
+                                                            <td>
+                                    무제한                                </td>
+                                                    </tr>
+                                            <tr>
+                            <th scope="row">스냅샷</th>
+                                                            <td>
+                                    5                                </td>
+                                                            <td>
+                                    무제한                                </td>
+                                                            <td>
+                                    무제한                                </td>
+                                                    </tr>
+                                            <tr>
+                            <th scope="row">대시보드와 실시간 그래프</th>
+                                                            <td>
+                                    <span class="yes" aria-label="포함"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                                                                    </td>
+                                                            <td>
+                                    <span class="yes" aria-label="포함"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                                                                    </td>
+                                                            <td>
+                                    <span class="yes" aria-label="포함"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                                                                    </td>
+                                                    </tr>
+                                            <tr>
+                            <th scope="row">내장 터미널</th>
+                                                            <td>
+                                    <span class="no" aria-label="미포함">—</span>
+                                                                    </td>
+                                                            <td>
+                                    <span class="yes" aria-label="포함"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                                                                    </td>
+                                                            <td>
+                                    <span class="yes" aria-label="포함"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                                                                    </td>
+                                                    </tr>
+                                            <tr>
+                            <th scope="row">서버에 연결</th>
+                                                            <td>
+                                    <span class="no" aria-label="미포함">—</span>
+                                                                    </td>
+                                                            <td>
+                                    <span class="yes" aria-label="포함"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                                                                    </td>
+                                                            <td>
+                                    <span class="yes" aria-label="포함"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                                                                    </td>
+                                                    </tr>
+                                            <tr>
+                            <th scope="row">원격 서버 관리</th>
+                                                            <td>
+                                    <span class="no" aria-label="미포함">—</span>
+                                                                    </td>
+                                                            <td>
+                                    <span class="no" aria-label="미포함">—</span>
+                                                                    </td>
+                                                            <td>
+                                    <span class="yes" aria-label="포함"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                                                                    </td>
+                                                    </tr>
+                                            <tr>
+                            <th scope="row">이미지 공유</th>
+                                                            <td>
+                                    <span class="no" aria-label="미포함">—</span>
+                                                                    </td>
+                                                            <td>
+                                    <span class="no" aria-label="미포함">—</span>
+                                                                    </td>
+                                                            <td>
+                                    <span class="yes" aria-label="포함"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+                                                                    </td>
+                                                    </tr>
+                                    </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="cta reveal">
+            <h2>오늘 첫 가상 머신을 만들어 보세요</h2>
+            <p>무료 요금제로 바로 시작하고 필요할 때 업그레이드하세요.</p>
+            <div class="hero-actions center-actions">
+                <a class="btn btn-light btn-lg" href="../ko/indir.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Mac용 다운로드</a>
+                <a class="btn btn-outline-light btn-lg" href="../ko/fiyatlar.html">요금제 비교</a>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="brand" href="../ko/index.html">
+                <img src="../assets/img/logo.svg" alt="" width="28" height="28">
+                <span>ModelPC VM</span>
+            </a>
+            <p class="muted">Mac에서 가상 머신을, 하나의 간단한 화면으로.</p>
+        </div>
+        <div>
+            <h4>제품</h4>
+            <a href="../ko/ozellikler.html">기능</a>
+            <a href="../ko/fiyatlar.html">요금</a>
+            <a href="../ko/indir.html">다운로드</a>
+        </div>
+        <div>
+            <h4>지원</h4>
+            <a href="../ko/destek.html">지원</a>
+            <a href="../ko/destek.html#sss">자주 묻는 질문</a>
+            <a href="../ko/iletisim.html">문의</a>
+                            <a href="mailto:destek@modelpc.app" dir="ltr">destek@modelpc.app</a>
+                            <a href="mailto:modelpc91@gmail.com" dir="ltr">modelpc91@gmail.com</a>
+                    </div>
+    </div>
+    <div class="container footer-bottom">
+        <span>© 2026 ModelPC VM. 모든 권리 보유.</span>
+        <span>버전 2.4.0</span>
+    </div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite" data-toast></div>
+<script>window.I18N = {"lang":"ko","strings":{"pricing.billed_monthly":"매월 결제","pricing.billed_yearly":"매년 결제","download.count":"버전 {count}개","error.session":"세션이 만료되었습니다. 양식을 다시 제출해 주세요.","error.failed":"메시지를 보내지 못했습니다.","error.name":"이름을 입력해 주세요.","error.email":"올바른 이메일 주소를 입력해 주세요.","error.topic":"주제를 선택해 주세요.","error.message":"메시지는 10자 이상이어야 합니다.","error.password_min":"비밀번호는 {min}자 이상이어야 합니다.","error.password_empty":"비밀번호를 입력해 주세요.","error.terms":"계속하려면 약관에 동의해 주세요.","error.email_taken":"이 이메일로 가입된 계정이 이미 있습니다. 로그인해 보세요.","error.login":"이메일 또는 비밀번호가 올바르지 않습니다.","error.login_empty":"이메일과 비밀번호를 입력하세요.","error.locked":"실패한 시도가 너무 많습니다. {minutes}분 후에 다시 시도해 주세요.","auth.show":"비밀번호 표시","auth.hide":"비밀번호 숨기기","js.download_mac":"Mac용 무료 다운로드","js.download_other":"macOS용 다운로드","js.preparing":"{file} 다운로드를 준비하는 중…","js.sending":"보내는 중…","js.strength":["8자 이상","약함","보통","좋음","강함"],"error.400.title":"잘못된 요청","error.400.heading":"요청을 처리할 수 없습니다","error.400.text":"브라우저가 보낸 요청이 잘못되었거나 불완전합니다. 주소를 확인한 뒤 페이지를 다시 열어 주세요.","error.400.term":"malformed request","error.401.title":"로그인 필요","error.401.heading":"이 페이지를 보려면 로그인해야 합니다","error.401.text":"계속하려면 계정에 로그인하세요. 세션이 만료되었을 수 있습니다.","error.401.term":"authentication required","error.403.title":"접근 거부","error.403.heading":"이 페이지에 접근할 권한이 없습니다","error.403.text":"이 콘텐츠를 볼 수 있는 권한이 없습니다. 오류라고 생각되면 문의해 주세요.","error.403.term":"permission denied","error.503.title":"점검 중","error.503.heading":"잠시 점검을 진행하고 있습니다","error.503.text":"서비스를 일시적으로 이용할 수 없습니다. 몇 분 후 다시 시도해 주세요. 데이터는 안전합니다.","error.503.term":"service unavailable"}};</script>
+<script src="../assets/js/app.js?v=1794313971" defer></script>
+</body>
+</html>
