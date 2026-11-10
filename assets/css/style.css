@@ -351,6 +351,17 @@ code { font-size: .9em; background: var(--bg-alt); padding: 2px 6px; border-radi
 .tag-soon { color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); }
 .download-soon h3 { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
 .download-soon h3 .icon { width: 20px; height: 20px; color: var(--muted); }
+.soon-pill {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; padding: 8px 14px;
+    border: 1px solid var(--border); border-radius: 99px; background: var(--surface);
+    color: var(--text); font-size: .9rem; font-weight: 500; transition: border-color .2s;
+}
+.soon-pill:hover { color: var(--text); border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
+.soon-pill .icon { width: 16px; height: 16px; color: var(--muted); }
+.soon-pill > .icon:last-child { transition: transform .2s; }
+.soon-pill:hover > .icon:last-child { transform: translateX(3px); }
+[dir="rtl"] .soon-pill > .icon:last-child { transform: scaleX(-1); }
+[dir="rtl"] .soon-pill:hover > .icon:last-child { transform: scaleX(-1) translateX(3px); }
 .release-notes { margin-top: 12px; }
 .release-notes summary { display: inline-flex; align-items: center; gap: 6px; font-size: .88rem; font-weight: 600; color: var(--muted); cursor: pointer; list-style: none; }
 .release-notes summary::-webkit-details-marker { display: none; }
