@@ -104,7 +104,7 @@ $$('[data-billing]').forEach((btn) => {
         $$('.price strong').forEach((el) => {
             el.classList.add('swap');
             setTimeout(() => {
-                el.textContent = el.dataset[period];
+                if (el.dataset[period]) el.textContent = el.dataset[period];
                 el.classList.remove('swap');
             }, 150);
         });
