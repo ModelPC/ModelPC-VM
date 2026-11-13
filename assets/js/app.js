@@ -129,7 +129,7 @@ if (downloadStat) {
     setInterval(() => { if (!document.hidden) refresh(); }, 5 * 60_000);
 }
 
-// Ana sayfadaki "nerelerde indiriliyor" bölümü: takip sunucusundan ülke/şehir toplamlarını çeker, 5 dakikada bir yeniler.
+// Ana sayfadaki "nerelerde indiriliyor" bölümü: takip sunucusundan ülke toplamlarını çeker, 5 dakikada bir yeniler.
 const geo = $('[data-geo]');
 if (geo) {
     const lang = I18N.lang;
@@ -168,7 +168,6 @@ if (geo) {
             if (!res.ok) throw new Error(String(res.status));
             const data = await res.json();
             renderList($('[data-geo-countries]', geo), data.countries, (r) => countryName(r.country));
-            renderList($('[data-geo-cities]', geo), data.cities, (r) => `${r.city}, ${countryName(r.country)}`);
             const empty = data.countries.length === 0;
             $('.geo-grid', geo).hidden = empty;
             $('[data-geo-empty]', geo).hidden = !empty;

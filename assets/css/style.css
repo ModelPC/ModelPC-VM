@@ -273,7 +273,7 @@ code { font-size: .9em; background: var(--bg-alt); padding: 2px 6px; border-radi
 }
 @media (max-width: 640px) { .stats-grid { grid-template-columns: repeat(2, 1fr); row-gap: 24px; } }
 .geo-section .eyebrow .live-dot { background: var(--success); animation: live-pulse 2s ease-out infinite; }
-.geo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.geo-grid { display: grid; gap: 20px; max-width: 640px; margin-inline: auto; }
 .geo-card { padding: 24px 28px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
 .geo-card h3 { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; font-size: 1.05rem; }
 .geo-card h3 .icon { width: 18px; height: 18px; color: var(--accent); }
@@ -292,7 +292,6 @@ code { font-size: .9em; background: var(--bg-alt); padding: 2px 6px; border-radi
 .geo-empty { text-align: center; padding: 28px; border: 1px dashed var(--border); border-radius: var(--radius); }
 .geo-note { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 20px; font-size: .85rem; text-align: center; }
 .geo-note .icon { width: 16px; height: 16px; flex: none; }
-@media (max-width: 760px) { .geo-grid { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .geo-section .eyebrow .live-dot { animation: none; } .geo-bar::after { transition: none; } }
 
 .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 32px; }
