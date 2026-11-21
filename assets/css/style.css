@@ -363,7 +363,8 @@ code { font-size: .9em; background: var(--bg-alt); padding: 2px 6px; border-radi
 .compare .no { color: var(--muted); }
 
 /* ===== İndir ===== */
-.download-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.download-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+@media (max-width: 1100px) { .download-grid { grid-template-columns: repeat(2, 1fr); } }
 .download-card { position: relative; padding: 28px; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; box-shadow: var(--shadow); transition: border-color .25s, transform .25s; }
 .download-card.is-current { border: 2px solid var(--primary); transform: translateY(-4px); }
 .download-card.is-current .btn { background: var(--primary); color: #fff; border-color: var(--primary); }
