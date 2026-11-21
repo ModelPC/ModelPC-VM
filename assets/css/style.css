@@ -189,6 +189,8 @@ code { font-size: .9em; background: var(--bg-alt); padding: 2px 6px; border-radi
 
 /* Uygulama penceresi maketi (gerçek uygulamanın koyu arayüzünü taklit eder) */
 .app-shot { border-radius: 16px; border: 1px solid var(--border); box-shadow: var(--shadow-lg); }
+.video-section { padding: 8px 0 48px; }
+.video-section .app-video { max-width: 1000px; margin: 0 auto; }
 .app-video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #05070d; object-fit: cover; }
 .app-window {
     --w-bg: #1c1c1e; --w-side: #232326; --w-card: #262629; --w-line: #333338; --w-text: #f2f2f5; --w-muted: #9a9aa3;
