@@ -400,6 +400,8 @@ code { font-size: .9em; background: var(--bg-alt); padding: 2px 6px; border-radi
 .tag-soon { color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); }
 .download-soon h3 { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
 .download-soon h3 .icon { width: 20px; height: 20px; color: var(--muted); }
+.soon-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.soon-pills .soon-pill { margin-top: 0; }
 .soon-pill {
     display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; padding: 8px 14px;
     border: 1px solid var(--border); border-radius: 99px; background: var(--surface);
