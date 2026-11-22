@@ -1,5 +1,7 @@
 # ModelPC VM
 
+<img width="1920" height="1080" alt="Ekran Resmi 2026-10-30 16 27 45" src="https://github.com/user-attachments/assets/2298d29a-89d8-4234-b5ad-c3ad18d9785a" />
+
 [Türkçe](README.md) · [English](README.en.md) · **Dansk**
 
 En SwiftUI-baseret administrator til virtuelle maskiner, der opretter og kører Linux-, Windows 11 ARM- og macOS-maskiner på Mac-computere med Apple Silicon. Den bruger Apples indbyggede **Virtualization.framework**, så der kræves hverken separat hypervisor eller kerneudvidelse.
