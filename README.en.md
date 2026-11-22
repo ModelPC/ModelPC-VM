@@ -1,5 +1,7 @@
 # ModelPC VM
 
+<img width="1920" height="1080" alt="Ekran Resmi 2026-10-30 16 27 45" src="https://github.com/user-attachments/assets/2298d29a-89d8-4234-b5ad-c3ad18d9785a" />
+
 [Türkçe](README.md) · **English** · [Dansk](README.da.md)
 
 A SwiftUI virtual machine manager for creating and running Linux, Windows 11 ARM and macOS virtual machines on Apple Silicon Macs. It uses Apple's built-in **Virtualization.framework**, so no separate hypervisor or kernel extension is needed.
