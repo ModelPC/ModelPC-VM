@@ -152,7 +152,7 @@
 
 <section class="page-hero">
     <div class="container narrow center reveal">
-        <span class="eyebrow">تنزيل · الإصدار 2.4.1</span>
+        <span class="eyebrow">تنزيل · الإصدار 2.5.0</span>
         <h1>نزّل ModelPC VM</h1>
         <p class="lead">اختر الإصدار المناسب لمعالج جهاز Mac. لست متأكدًا؟ قائمة Apple ← حول هذا الـ Mac.</p>
     </div>
@@ -164,16 +164,16 @@
                 <span class="os-detected">نظامك</span>
                 <h3>macOS · Apple Silicon</h3>
                 <p class="muted">M1 وM2 وM3 وM4 وما بعدها</p>
-                <p class="file-meta"><code>ModelPC-VM-2.4.1.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.4.1/ModelPC-VM-2.4.1.dmg" data-download="ModelPC-VM-2.4.1.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تنزيل لـ Apple Silicon                </a>
             </article>
                     <article class="download-card reveal" data-os="mac-intel">
                 <span class="os-detected">نظامك</span>
                 <h3>macOS · Intel</h3>
                 <p class="muted">أجهزة Mac بمعالجات Intel</p>
-                <p class="file-meta"><code>ModelPC-VM-2.4.1.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.4.1/ModelPC-VM-2.4.1.dmg" data-download="ModelPC-VM-2.4.1.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> تنزيل لـ Intel                </a>
             </article>
                 <article class="download-card download-soon reveal" id="windows" data-os="windows">
@@ -225,9 +225,9 @@
                                                     </div>
                     </div>
                     <details class="release-notes" open>
-                        <summary>التغييرات (5) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <summary>التغييرات (7) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
-                            <li>دعم Windows العادي: أصبح بالإمكان تثبيت ملفات ISO لأنظمة Windows 7 و8.1 و10 و11 وServer بمعمارية x64/x86 (محاكاة QEMU، أبطأ من ARM)</li><li>يتم اكتشاف معمارية ملف ISO تلقائيًا ويختار المعالج المحرك المناسب</li><li>يتطلب Windows x64 برنامج QEMU، ويمكن للتطبيق تثبيته بنقرة واحدة (Homebrew)</li><li>علامة تبويب لوحدة التحكم التسلسلية لكل جهاز افتراضي في صفحة الطرفية</li><li>يتضمن جميع إصلاحات الأمان من الإصدار 2.4.1</li>                        </ul>
+                            <li>دعم Windows العادي: يمكن الآن تثبيت إصدارات Windows ‏x64 و x86 لمعالجات Intel/AMD ‏(Windows 7 و 8.1 و 10 و 11 و Windows Server) عبر محاكاة QEMU</li><li>تُقرأ بنية ملف ISO من داخل الملف نفسه، ويختار المعالج المحرّك المناسب تلقائيًا</li><li>إذا لم يكن QEMU مثبتًا، يثبّته التطبيق عبر Homebrew بزر «تثبيت QEMU»</li><li>تعمل أنظمة ARM64 ‏(Windows 11 ARM و Linux ARM و macOS) بالسرعة الأصلية كما في السابق</li><li>علامة تبويب للوحدة الطرفية التسلسلية لكل جهاز افتراضي (Terminal)</li><li>يظهر رقم الإصدار تلقائيًا في صفحات «حول» و«الإعدادات» و«التواصل»</li><li>يتضمن جميع إصلاحات الأمان من الإصدار 2.4.1</li>                        </ul>
                     </details>
                 </li>
                             <li class="release reveal" data-release>
@@ -340,7 +340,7 @@
     </div>
     <div class="container footer-bottom">
         <span>© 2026 ModelPC VM. جميع الحقوق محفوظة.</span>
-        <span>الإصدار 2.4.1</span>
+        <span>الإصدار 2.5.0</span>
     </div>
 </footer>
 

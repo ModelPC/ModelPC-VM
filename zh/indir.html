@@ -152,7 +152,7 @@
 
 <section class="page-hero">
     <div class="container narrow center reveal">
-        <span class="eyebrow">下载 · 版本 2.4.1</span>
+        <span class="eyebrow">下载 · 版本 2.5.0</span>
         <h1>下载 ModelPC VM</h1>
         <p class="lead">请选择与你的 Mac 处理器匹配的版本。不确定？请打开苹果菜单 → 关于本机。</p>
     </div>
@@ -164,16 +164,16 @@
                 <span class="os-detected">你的系统</span>
                 <h3>macOS · Apple Silicon</h3>
                 <p class="muted">M1、M2、M3、M4 及更新机型</p>
-                <p class="file-meta"><code>ModelPC-VM-2.4.1.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.4.1/ModelPC-VM-2.4.1.dmg" data-download="ModelPC-VM-2.4.1.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> 下载 Apple Silicon 版                </a>
             </article>
                     <article class="download-card reveal" data-os="mac-intel">
                 <span class="os-detected">你的系统</span>
                 <h3>macOS · Intel</h3>
                 <p class="muted">搭载 Intel 处理器的 Mac</p>
-                <p class="file-meta"><code>ModelPC-VM-2.4.1.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.4.1/ModelPC-VM-2.4.1.dmg" data-download="ModelPC-VM-2.4.1.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> 下载 Intel 版                </a>
             </article>
                 <article class="download-card download-soon reveal" id="windows" data-os="windows">
@@ -225,9 +225,9 @@
                                                     </div>
                     </div>
                     <details class="release-notes" open>
-                        <summary>更新内容（5） <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <summary>更新内容（7） <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
-                            <li>支持普通 Windows：现在可以安装 Windows 7、8.1、10、11 和 Server 的 x64/x86 ISO（QEMU 模拟，比 ARM 慢）</li><li>自动识别 ISO 架构，向导会选择合适的引擎</li><li>x64 Windows 需要 QEMU；应用可一键安装（Homebrew）</li><li>终端页面为每台虚拟机提供串行控制台标签页</li><li>包含 2.4.1 的全部安全修复</li>                        </ul>
+                            <li>支持普通 Windows：现在可通过 QEMU 仿真安装面向 Intel/AMD 的 x64 和 x86 版 Windows（Windows 7、8.1、10、11 及 Windows Server）</li><li>ISO 的架构从文件内部读取，向导会自动选择合适的引擎</li><li>如果未安装 QEMU，应用会通过“安装 QEMU”按钮使用 Homebrew 安装</li><li>ARM64 系统（Windows 11 ARM、ARM Linux、macOS）仍以原生速度运行</li><li>每台虚拟机新增串口控制台标签页（终端）</li><li>版本号会自动显示在“关于”“设置”和“联系”页面</li><li>包含 2.4.1 的全部安全修复</li>                        </ul>
                     </details>
                 </li>
                             <li class="release reveal" data-release>
@@ -340,7 +340,7 @@
     </div>
     <div class="container footer-bottom">
         <span>© 2026 ModelPC VM. 保留所有权利。</span>
-        <span>版本 2.4.1</span>
+        <span>版本 2.5.0</span>
     </div>
 </footer>
 

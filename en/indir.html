@@ -152,7 +152,7 @@
 
 <section class="page-hero">
     <div class="container narrow center reveal">
-        <span class="eyebrow">Download · Version 2.4.1</span>
+        <span class="eyebrow">Download · Version 2.5.0</span>
         <h1>Download ModelPC VM</h1>
         <p class="lead">Choose the version that matches your Mac’s processor. Not sure? Apple menu → About This Mac.</p>
     </div>
@@ -164,16 +164,16 @@
                 <span class="os-detected">Your system</span>
                 <h3>macOS · Apple Silicon</h3>
                 <p class="muted">M1, M2, M3, M4 and later</p>
-                <p class="file-meta"><code>ModelPC-VM-2.4.1.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.4.1/ModelPC-VM-2.4.1.dmg" data-download="ModelPC-VM-2.4.1.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Download for Apple Silicon                </a>
             </article>
                     <article class="download-card reveal" data-os="mac-intel">
                 <span class="os-detected">Your system</span>
                 <h3>macOS · Intel</h3>
                 <p class="muted">Macs with Intel processors</p>
-                <p class="file-meta"><code>ModelPC-VM-2.4.1.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.4.1/ModelPC-VM-2.4.1.dmg" data-download="ModelPC-VM-2.4.1.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Download for Intel                </a>
             </article>
                 <article class="download-card download-soon reveal" id="windows" data-os="windows">
@@ -225,9 +225,9 @@
                                                     </div>
                     </div>
                     <details class="release-notes" open>
-                        <summary>Changes (5) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <summary>Changes (7) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
-                            <li>Regular Windows support: x64/x86 Windows 7, 8.1, 10, 11 and Server ISOs can now be installed (QEMU emulation, slower than ARM)</li><li>The ISO’s architecture is detected automatically and the wizard picks the right engine</li><li>x64 Windows needs QEMU; the app can install it in one click (Homebrew)</li><li>Serial console tab for each VM on the Terminal page</li><li>Includes all security fixes from 2.4.1</li>                        </ul>
+                            <li>Regular Windows support: x64 and x86 Windows builds for Intel/AMD (Windows 7, 8.1, 10, 11 and Windows Server) can now be installed through QEMU emulation</li><li>The ISO’s architecture is read from inside the file, and the wizard picks the right engine automatically</li><li>If QEMU is missing, the app installs it via Homebrew with the “Install QEMU” button</li><li>ARM64 systems (Windows 11 ARM, ARM Linux, macOS) still run at native speed</li><li>Serial console tab for every virtual machine (Terminal)</li><li>The version number is shown automatically on the About, Settings and Contact pages</li><li>Includes all security fixes from 2.4.1</li>                        </ul>
                     </details>
                 </li>
                             <li class="release reveal" data-release>
@@ -340,7 +340,7 @@
     </div>
     <div class="container footer-bottom">
         <span>© 2026 ModelPC VM. All rights reserved.</span>
-        <span>Version 2.4.1</span>
+        <span>Version 2.5.0</span>
     </div>
 </footer>
 
