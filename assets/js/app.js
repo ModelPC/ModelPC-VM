@@ -121,7 +121,7 @@ if (downloadStat) {
                 try { sessionStorage.setItem(CACHE_KEY, JSON.stringify({ at: Date.now(), total })); } catch { /* yok say */ }
             }
             downloadStat.classList.add('is-live');
-            animateTo(total);
+            animateTo(Math.max(0, total - Number(downloadStat.dataset.baseline || 0)));
         } catch {
             downloadStat.classList.remove('is-live');
         }
