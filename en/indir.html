@@ -205,15 +205,36 @@
 
         <div class="release-filter reveal" role="search">
             <input type="search" placeholder="Search versions or changes…" aria-label="Search versions" data-release-search>
-            <span class="muted" data-release-count>3 versions</span>
+            <span class="muted" data-release-count>4 versions</span>
         </div>
 
         <ul class="release-list">
                             <li class="release reveal" data-release>
                     <div class="release-head">
                         <div class="release-title">
+                            <strong>v2.5.0</strong>
+                            <span class="tag tag-new">Latest</span>                            <span class="muted release-meta"><time datetime="2026-11-22">November 22, 2026</time> · 9 MB</span>
+                        </div>
+                        <div class="release-actions">
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
+                                   data-download="ModelPC-VM-2.5.0.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Apple Silicon                                </a>
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
+                                   data-download="ModelPC-VM-2.5.0.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
+                                                    </div>
+                    </div>
+                    <details class="release-notes" open>
+                        <summary>Changes (5) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <ul>
+                            <li>Regular Windows support: x64/x86 Windows 7, 8.1, 10, 11 and Server ISOs can now be installed (QEMU emulation, slower than ARM)</li><li>The ISO’s architecture is detected automatically and the wizard picks the right engine</li><li>x64 Windows needs QEMU; the app can install it in one click (Homebrew)</li><li>Serial console tab for each VM on the Terminal page</li><li>Includes all security fixes from 2.4.1</li>                        </ul>
+                    </details>
+                </li>
+                            <li class="release reveal" data-release>
+                    <div class="release-head">
+                        <div class="release-title">
                             <strong>v2.4.1</strong>
-                            <span class="tag tag-new">Latest</span>                            <span class="muted release-meta"><time datetime="2026-11-10">November 10, 2026</time> · 8 MB</span>
+                                                        <span class="muted release-meta"><time datetime="2026-11-10">November 10, 2026</time> · 8 MB</span>
                         </div>
                         <div class="release-actions">
                                                             <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.4.1/ModelPC-VM-2.4.1.dmg"
@@ -224,7 +245,7 @@
                                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
                                                     </div>
                     </div>
-                    <details class="release-notes" open>
+                    <details class="release-notes" >
                         <summary>Changes (6) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
                             <li>Security update: recommended for all users</li><li>VM import (.mpcvm) only takes the VM’s own disks, snapshots and NVRAM</li><li>Forwarded ports are now reachable only from this Mac (127.0.0.1)</li><li>The SSH command in Terminal only uses a valid IP address and a safe user name</li><li>Downloaded ISO files are always saved inside the ISO folder</li><li>The system info in the Contact form now shows the correct version</li>                        </ul>

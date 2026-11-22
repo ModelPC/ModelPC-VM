@@ -218,15 +218,36 @@
 
         <div class="release-filter reveal" role="search">
             <input type="search" placeholder="Sürüm veya değişiklik ara…" aria-label="Sürüm ara" data-release-search>
-            <span class="muted" data-release-count>3 sürüm</span>
+            <span class="muted" data-release-count>4 sürüm</span>
         </div>
 
         <ul class="release-list">
                             <li class="release reveal" data-release>
                     <div class="release-head">
                         <div class="release-title">
+                            <strong>v2.5.0</strong>
+                            <span class="tag tag-new">Son sürüm</span>                            <span class="muted release-meta"><time datetime="2026-11-22">22 Kasım 2026</time> · 9 MB</span>
+                        </div>
+                        <div class="release-actions">
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
+                                   data-download="ModelPC-VM-2.5.0.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Apple Silicon                                </a>
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
+                                   data-download="ModelPC-VM-2.5.0.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
+                                                    </div>
+                    </div>
+                    <details class="release-notes" open>
+                        <summary>Değişiklikler (5) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <ul>
+                            <li>Normal Windows desteği: x64/x86 Windows 7, 8.1, 10, 11 ve Server ISO’ları artık kurulabiliyor (QEMU emülasyonu, ARM’a göre yavaş)</li><li>ISO’nun mimarisi otomatik algılanır; sihirbaz doğru motoru seçer</li><li>x64 Windows için QEMU gerekir; uygulama tek tıkla kurabilir (Homebrew)</li><li>Terminal sayfasında her sanal makine için seri konsol sekmesi</li><li>2.4.1’deki tüm güvenlik düzeltmelerini içerir</li>                        </ul>
+                    </details>
+                </li>
+                            <li class="release reveal" data-release>
+                    <div class="release-head">
+                        <div class="release-title">
                             <strong>v2.4.1</strong>
-                            <span class="tag tag-new">Son sürüm</span>                            <span class="muted release-meta"><time datetime="2026-11-10">10 Kasım 2026</time> · 8 MB</span>
+                                                        <span class="muted release-meta"><time datetime="2026-11-10">10 Kasım 2026</time> · 8 MB</span>
                         </div>
                         <div class="release-actions">
                                                             <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.4.1/ModelPC-VM-2.4.1.dmg"
@@ -237,7 +258,7 @@
                                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
                                                     </div>
                     </div>
-                    <details class="release-notes" open>
+                    <details class="release-notes" >
                         <summary>Değişiklikler (6) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
                             <li>Güvenlik güncellemesi: tüm kullanıcılara önerilir</li><li>VM içe aktarma (.mpcvm) yalnızca sanal makinenin kendi disklerini, anlık görüntülerini ve NVRAM dosyasını alır</li><li>Yönlendirilen portlar artık yalnızca bu Mac’ten (127.0.0.1) erişilebilir</li><li>Terminal’deki SSH komutu yalnızca geçerli bir IP adresi ve güvenli bir kullanıcı adı kullanır</li><li>İndirilen ISO dosyaları her zaman ISO klasörüne kaydedilir</li><li>İletişim formundaki sistem bilgisinde doğru sürüm gösterilir</li>                        </ul>

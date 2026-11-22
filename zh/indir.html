@@ -205,15 +205,36 @@
 
         <div class="release-filter reveal" role="search">
             <input type="search" placeholder="搜索版本或更新内容…" aria-label="搜索版本" data-release-search>
-            <span class="muted" data-release-count>共 3 个版本</span>
+            <span class="muted" data-release-count>共 4 个版本</span>
         </div>
 
         <ul class="release-list">
                             <li class="release reveal" data-release>
                     <div class="release-head">
                         <div class="release-title">
+                            <strong>v2.5.0</strong>
+                            <span class="tag tag-new">最新</span>                            <span class="muted release-meta"><time datetime="2026-11-22">2026年11月22日</time> · 9 MB</span>
+                        </div>
+                        <div class="release-actions">
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
+                                   data-download="ModelPC-VM-2.5.0.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Apple Silicon                                </a>
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
+                                   data-download="ModelPC-VM-2.5.0.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
+                                                    </div>
+                    </div>
+                    <details class="release-notes" open>
+                        <summary>更新内容（5） <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <ul>
+                            <li>支持普通 Windows：现在可以安装 Windows 7、8.1、10、11 和 Server 的 x64/x86 ISO（QEMU 模拟，比 ARM 慢）</li><li>自动识别 ISO 架构，向导会选择合适的引擎</li><li>x64 Windows 需要 QEMU；应用可一键安装（Homebrew）</li><li>终端页面为每台虚拟机提供串行控制台标签页</li><li>包含 2.4.1 的全部安全修复</li>                        </ul>
+                    </details>
+                </li>
+                            <li class="release reveal" data-release>
+                    <div class="release-head">
+                        <div class="release-title">
                             <strong>v2.4.1</strong>
-                            <span class="tag tag-new">最新</span>                            <span class="muted release-meta"><time datetime="2026-11-10">2026年11月10日</time> · 8 MB</span>
+                                                        <span class="muted release-meta"><time datetime="2026-11-10">2026年11月10日</time> · 8 MB</span>
                         </div>
                         <div class="release-actions">
                                                             <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.4.1/ModelPC-VM-2.4.1.dmg"
@@ -224,7 +245,7 @@
                                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
                                                     </div>
                     </div>
-                    <details class="release-notes" open>
+                    <details class="release-notes" >
                         <summary>更新内容（6） <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
                             <li>安全更新：建议所有用户升级</li><li>导入虚拟机（.mpcvm）时仅读取该虚拟机自身的磁盘、快照和 NVRAM</li><li>转发的端口现在只能从本机（127.0.0.1）访问</li><li>终端中的 SSH 命令只使用有效的 IP 地址和安全的用户名</li><li>下载的 ISO 文件始终保存在 ISO 文件夹中</li><li>联系表单中的系统信息现在显示正确的版本</li>                        </ul>

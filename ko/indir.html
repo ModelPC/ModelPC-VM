@@ -205,15 +205,36 @@
 
         <div class="release-filter reveal" role="search">
             <input type="search" placeholder="버전 또는 변경 내역 검색…" aria-label="버전 검색" data-release-search>
-            <span class="muted" data-release-count>버전 3개</span>
+            <span class="muted" data-release-count>버전 4개</span>
         </div>
 
         <ul class="release-list">
                             <li class="release reveal" data-release>
                     <div class="release-head">
                         <div class="release-title">
+                            <strong>v2.5.0</strong>
+                            <span class="tag tag-new">최신</span>                            <span class="muted release-meta"><time datetime="2026-11-22">2026년 11월 22일</time> · 9 MB</span>
+                        </div>
+                        <div class="release-actions">
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
+                                   data-download="ModelPC-VM-2.5.0.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Apple Silicon                                </a>
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
+                                   data-download="ModelPC-VM-2.5.0.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
+                                                    </div>
+                    </div>
+                    <details class="release-notes" open>
+                        <summary>변경 내역 (5) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <ul>
+                            <li>일반 Windows 지원: 이제 Windows 7, 8.1, 10, 11 및 Server의 x64/x86 ISO를 설치할 수 있습니다 (QEMU 에뮬레이션, ARM보다 느림)</li><li>ISO 아키텍처를 자동으로 감지하고 마법사가 알맞은 엔진을 선택합니다</li><li>x64 Windows에는 QEMU가 필요하며 앱에서 클릭 한 번으로 설치할 수 있습니다 (Homebrew)</li><li>터미널 페이지에 VM별 시리얼 콘솔 탭</li><li>2.4.1의 모든 보안 수정 사항 포함</li>                        </ul>
+                    </details>
+                </li>
+                            <li class="release reveal" data-release>
+                    <div class="release-head">
+                        <div class="release-title">
                             <strong>v2.4.1</strong>
-                            <span class="tag tag-new">최신</span>                            <span class="muted release-meta"><time datetime="2026-11-10">2026년 11월 10일</time> · 8 MB</span>
+                                                        <span class="muted release-meta"><time datetime="2026-11-10">2026년 11월 10일</time> · 8 MB</span>
                         </div>
                         <div class="release-actions">
                                                             <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.4.1/ModelPC-VM-2.4.1.dmg"
@@ -224,7 +245,7 @@
                                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
                                                     </div>
                     </div>
-                    <details class="release-notes" open>
+                    <details class="release-notes" >
                         <summary>변경 내역 (6) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
                             <li>보안 업데이트: 모든 사용자에게 권장</li><li>VM 가져오기(.mpcvm)는 해당 VM의 디스크, 스냅샷, NVRAM만 가져옵니다</li><li>포워딩된 포트는 이제 이 Mac(127.0.0.1)에서만 접근할 수 있습니다</li><li>터미널의 SSH 명령은 유효한 IP 주소와 안전한 사용자 이름만 사용합니다</li><li>다운로드한 ISO 파일은 항상 ISO 폴더에 저장됩니다</li><li>문의 양식의 시스템 정보에 올바른 버전이 표시됩니다</li>                        </ul>

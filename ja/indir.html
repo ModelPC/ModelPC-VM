@@ -205,15 +205,36 @@
 
         <div class="release-filter reveal" role="search">
             <input type="search" placeholder="バージョンや変更内容を検索…" aria-label="バージョンを検索" data-release-search>
-            <span class="muted" data-release-count>3 件のバージョン</span>
+            <span class="muted" data-release-count>4 件のバージョン</span>
         </div>
 
         <ul class="release-list">
                             <li class="release reveal" data-release>
                     <div class="release-head">
                         <div class="release-title">
+                            <strong>v2.5.0</strong>
+                            <span class="tag tag-new">最新</span>                            <span class="muted release-meta"><time datetime="2026-11-22">2026年11月22日</time> · 9 MB</span>
+                        </div>
+                        <div class="release-actions">
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
+                                   data-download="ModelPC-VM-2.5.0.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Apple Silicon                                </a>
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
+                                   data-download="ModelPC-VM-2.5.0.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
+                                                    </div>
+                    </div>
+                    <details class="release-notes" open>
+                        <summary>変更内容（5） <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <ul>
+                            <li>通常版 Windows に対応：Windows 7、8.1、10、11、Server の x64/x86 ISO をインストールできるようになりました（QEMU エミュレーション、ARM より低速）</li><li>ISO のアーキテクチャを自動検出し、ウィザードが適切なエンジンを選択</li><li>x64 Windows には QEMU が必要です。アプリからワンクリックでインストールできます（Homebrew）</li><li>ターミナルページに VM ごとのシリアルコンソールタブ</li><li>2.4.1 のセキュリティ修正をすべて含みます</li>                        </ul>
+                    </details>
+                </li>
+                            <li class="release reveal" data-release>
+                    <div class="release-head">
+                        <div class="release-title">
                             <strong>v2.4.1</strong>
-                            <span class="tag tag-new">最新</span>                            <span class="muted release-meta"><time datetime="2026-11-10">2026年11月10日</time> · 8 MB</span>
+                                                        <span class="muted release-meta"><time datetime="2026-11-10">2026年11月10日</time> · 8 MB</span>
                         </div>
                         <div class="release-actions">
                                                             <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.4.1/ModelPC-VM-2.4.1.dmg"
@@ -224,7 +245,7 @@
                                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
                                                     </div>
                     </div>
-                    <details class="release-notes" open>
+                    <details class="release-notes" >
                         <summary>変更内容（6） <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
                             <li>セキュリティアップデート：すべてのユーザーに推奨</li><li>仮想マシンの読み込み（.mpcvm）では、その VM 自身のディスク・スナップショット・NVRAM のみを取り込みます</li><li>転送したポートはこの Mac（127.0.0.1）からのみアクセス可能に</li><li>ターミナルの SSH コマンドは有効な IP アドレスと安全なユーザー名のみを使用</li><li>ダウンロードした ISO ファイルは常に ISO フォルダに保存</li><li>お問い合わせフォームのシステム情報に正しいバージョンを表示</li>                        </ul>

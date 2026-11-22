@@ -205,15 +205,36 @@
 
         <div class="release-filter reveal" role="search">
             <input type="search" placeholder="ابحث في الإصدارات أو التغييرات…" aria-label="البحث في الإصدارات" data-release-search>
-            <span class="muted" data-release-count>3 إصدارات</span>
+            <span class="muted" data-release-count>4 إصدارات</span>
         </div>
 
         <ul class="release-list">
                             <li class="release reveal" data-release>
                     <div class="release-head">
                         <div class="release-title">
+                            <strong>v2.5.0</strong>
+                            <span class="tag tag-new">الأحدث</span>                            <span class="muted release-meta"><time datetime="2026-11-22">٢٢ نوفمبر، ٢٠٢٦</time> · 9 MB</span>
+                        </div>
+                        <div class="release-actions">
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
+                                   data-download="ModelPC-VM-2.5.0.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Apple Silicon                                </a>
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
+                                   data-download="ModelPC-VM-2.5.0.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
+                                                    </div>
+                    </div>
+                    <details class="release-notes" open>
+                        <summary>التغييرات (5) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <ul>
+                            <li>دعم Windows العادي: أصبح بالإمكان تثبيت ملفات ISO لأنظمة Windows 7 و8.1 و10 و11 وServer بمعمارية x64/x86 (محاكاة QEMU، أبطأ من ARM)</li><li>يتم اكتشاف معمارية ملف ISO تلقائيًا ويختار المعالج المحرك المناسب</li><li>يتطلب Windows x64 برنامج QEMU، ويمكن للتطبيق تثبيته بنقرة واحدة (Homebrew)</li><li>علامة تبويب لوحدة التحكم التسلسلية لكل جهاز افتراضي في صفحة الطرفية</li><li>يتضمن جميع إصلاحات الأمان من الإصدار 2.4.1</li>                        </ul>
+                    </details>
+                </li>
+                            <li class="release reveal" data-release>
+                    <div class="release-head">
+                        <div class="release-title">
                             <strong>v2.4.1</strong>
-                            <span class="tag tag-new">الأحدث</span>                            <span class="muted release-meta"><time datetime="2026-11-10">١٠ نوفمبر، ٢٠٢٦</time> · 8 MB</span>
+                                                        <span class="muted release-meta"><time datetime="2026-11-10">١٠ نوفمبر، ٢٠٢٦</time> · 8 MB</span>
                         </div>
                         <div class="release-actions">
                                                             <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.4.1/ModelPC-VM-2.4.1.dmg"
@@ -224,7 +245,7 @@
                                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
                                                     </div>
                     </div>
-                    <details class="release-notes" open>
+                    <details class="release-notes" >
                         <summary>التغييرات (6) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
                             <li>تحديث أمني: يُنصح به لجميع المستخدمين</li><li>استيراد الأجهزة الافتراضية (.mpcvm) يأخذ أقراص الجهاز ولقطاته وملف NVRAM الخاص به فقط</li><li>المنافذ المُعاد توجيهها متاحة الآن من هذا الـ Mac فقط (127.0.0.1)</li><li>أمر SSH في الطرفية يستخدم عنوان IP صالحًا واسم مستخدم آمنًا فقط</li><li>تُحفظ ملفات ISO التي تم تنزيلها دائمًا داخل مجلد ISO</li><li>معلومات النظام في نموذج الاتصال تعرض الآن الإصدار الصحيح</li>                        </ul>
