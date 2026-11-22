@@ -152,7 +152,7 @@
 
 <section class="page-hero">
     <div class="container narrow center reveal">
-        <span class="eyebrow">Скачать · Версия 2.5.0</span>
+        <span class="eyebrow">Скачать · Версия 2.5.1</span>
         <h1>Скачайте ModelPC VM</h1>
         <p class="lead">Выберите версию для процессора вашего Mac. Не уверены? Меню Apple → Об этом Mac.</p>
     </div>
@@ -164,16 +164,16 @@
                 <span class="os-detected">Ваша система</span>
                 <h3>macOS · Apple Silicon</h3>
                 <p class="muted">M1, M2, M3, M4 и новее</p>
-                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.1.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg" data-download="ModelPC-VM-2.5.1.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Скачать для Apple Silicon                </a>
             </article>
                     <article class="download-card reveal" data-os="mac-intel">
                 <span class="os-detected">Ваша система</span>
                 <h3>macOS · Intel</h3>
                 <p class="muted">Mac с процессором Intel</p>
-                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.1.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg" data-download="ModelPC-VM-2.5.1.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Скачать для Intel                </a>
             </article>
                 <article class="download-card download-soon reveal" id="windows" data-os="windows">
@@ -205,15 +205,36 @@
 
         <div class="release-filter reveal" role="search">
             <input type="search" placeholder="Поиск по версиям и изменениям…" aria-label="Поиск версий" data-release-search>
-            <span class="muted" data-release-count>Версий: 4</span>
+            <span class="muted" data-release-count>Версий: 5</span>
         </div>
 
         <ul class="release-list">
                             <li class="release reveal" data-release>
                     <div class="release-head">
                         <div class="release-title">
-                            <strong>v2.5.0</strong>
+                            <strong>v2.5.1</strong>
                             <span class="tag tag-new">Последняя</span>                            <span class="muted release-meta"><time datetime="2026-11-22">22 ноября 2026 г.</time> · 9 MB</span>
+                        </div>
+                        <div class="release-actions">
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg"
+                                   data-download="ModelPC-VM-2.5.1.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Apple Silicon                                </a>
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg"
+                                   data-download="ModelPC-VM-2.5.1.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
+                                                    </div>
+                    </div>
+                    <details class="release-notes" open>
+                        <summary>Изменения (2) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <ul>
+                            <li>Установка Windows 11 x64 больше не останавливается с ошибкой «Этот компьютер не может запустить Windows 11»: проверки TPM, Secure Boot и процессора пропускаются автоматически</li><li>Установщик пропускает страницы «Установить» и «Обновление / Выборочная»; страницы ключа продукта, выпуска и диска показываются как обычно</li>                        </ul>
+                    </details>
+                </li>
+                            <li class="release reveal" data-release>
+                    <div class="release-head">
+                        <div class="release-title">
+                            <strong>v2.5.0</strong>
+                                                        <span class="muted release-meta"><time datetime="2026-11-22">22 ноября 2026 г.</time> · 9 MB</span>
                         </div>
                         <div class="release-actions">
                                                             <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
@@ -224,7 +245,7 @@
                                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
                                                     </div>
                     </div>
-                    <details class="release-notes" open>
+                    <details class="release-notes" >
                         <summary>Изменения (7) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
                             <li>Поддержка обычной Windows: версии Windows x64 и x86 для Intel/AMD (Windows 7, 8.1, 10, 11 и Windows Server) теперь устанавливаются через эмуляцию QEMU</li><li>Архитектура ISO определяется по содержимому файла, мастер сам выбирает нужный движок</li><li>Если QEMU не установлен, приложение установит его через Homebrew кнопкой «Установить QEMU»</li><li>Системы ARM64 (Windows 11 ARM, ARM Linux, macOS) по-прежнему работают с нативной скоростью</li><li>Вкладка последовательной консоли для каждой виртуальной машины (Терминал)</li><li>Номер версии автоматически показывается в разделах «О программе», «Настройки» и «Контакты»</li><li>Включает все исправления безопасности из 2.4.1</li>                        </ul>
@@ -340,7 +361,7 @@
     </div>
     <div class="container footer-bottom">
         <span>© 2026 ModelPC VM. Все права защищены.</span>
-        <span>Версия 2.5.0</span>
+        <span>Версия 2.5.1</span>
     </div>
 </footer>
 

@@ -152,7 +152,7 @@
 
 <section class="page-hero">
     <div class="container narrow center reveal">
-        <span class="eyebrow">Baixar · Versão 2.5.0</span>
+        <span class="eyebrow">Baixar · Versão 2.5.1</span>
         <h1>Baixe o ModelPC VM</h1>
         <p class="lead">Escolha a versão para o processador do seu Mac. Na dúvida? Menu Apple → Sobre Este Mac.</p>
     </div>
@@ -164,16 +164,16 @@
                 <span class="os-detected">Seu sistema</span>
                 <h3>macOS · Apple Silicon</h3>
                 <p class="muted">M1, M2, M3, M4 e posteriores</p>
-                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.1.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg" data-download="ModelPC-VM-2.5.1.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Baixar para Apple Silicon                </a>
             </article>
                     <article class="download-card reveal" data-os="mac-intel">
                 <span class="os-detected">Seu sistema</span>
                 <h3>macOS · Intel</h3>
                 <p class="muted">Macs com processador Intel</p>
-                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.1.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg" data-download="ModelPC-VM-2.5.1.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Baixar para Intel                </a>
             </article>
                 <article class="download-card download-soon reveal" id="windows" data-os="windows">
@@ -205,15 +205,36 @@
 
         <div class="release-filter reveal" role="search">
             <input type="search" placeholder="Buscar versões ou alterações…" aria-label="Buscar versões" data-release-search>
-            <span class="muted" data-release-count>4 versões</span>
+            <span class="muted" data-release-count>5 versões</span>
         </div>
 
         <ul class="release-list">
                             <li class="release reveal" data-release>
                     <div class="release-head">
                         <div class="release-title">
-                            <strong>v2.5.0</strong>
+                            <strong>v2.5.1</strong>
                             <span class="tag tag-new">Mais recente</span>                            <span class="muted release-meta"><time datetime="2026-11-22">22 de novembro de 2026</time> · 9 MB</span>
+                        </div>
+                        <div class="release-actions">
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg"
+                                   data-download="ModelPC-VM-2.5.1.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Apple Silicon                                </a>
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg"
+                                   data-download="ModelPC-VM-2.5.1.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
+                                                    </div>
+                    </div>
+                    <details class="release-notes" open>
+                        <summary>Alterações (2) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <ul>
+                            <li>A instalação do Windows 11 x64 não para mais com “Este computador não pode executar o Windows 11”: as verificações de TPM, Secure Boot e CPU são ignoradas automaticamente</li><li>O instalador pula as páginas “Instalar agora” e “Atualização / Personalizada”; as de chave do produto, edição e disco aparecem normalmente</li>                        </ul>
+                    </details>
+                </li>
+                            <li class="release reveal" data-release>
+                    <div class="release-head">
+                        <div class="release-title">
+                            <strong>v2.5.0</strong>
+                                                        <span class="muted release-meta"><time datetime="2026-11-22">22 de novembro de 2026</time> · 9 MB</span>
                         </div>
                         <div class="release-actions">
                                                             <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
@@ -224,7 +245,7 @@
                                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
                                                     </div>
                     </div>
-                    <details class="release-notes" open>
+                    <details class="release-notes" >
                         <summary>Alterações (7) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
                             <li>Suporte ao Windows comum: versões x64 e x86 do Windows para Intel/AMD (Windows 7, 8.1, 10, 11 e Windows Server) agora podem ser instaladas com emulação QEMU</li><li>A arquitetura da ISO é lida do próprio arquivo, e o assistente escolhe o motor certo</li><li>Se o QEMU não estiver instalado, o app o instala via Homebrew com o botão “Instalar QEMU”</li><li>Sistemas ARM64 (Windows 11 ARM, Linux ARM, macOS) continuam rodando em velocidade nativa</li><li>Aba de console serial para cada máquina virtual (Terminal)</li><li>O número da versão aparece automaticamente em Sobre, Ajustes e Contato</li><li>Inclui todas as correções de segurança da 2.4.1</li>                        </ul>
@@ -340,7 +361,7 @@
     </div>
     <div class="container footer-bottom">
         <span>© 2026 ModelPC VM. Todos os direitos reservados.</span>
-        <span>Versão 2.5.0</span>
+        <span>Versão 2.5.1</span>
     </div>
 </footer>
 

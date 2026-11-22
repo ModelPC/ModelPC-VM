@@ -152,7 +152,7 @@
 
 <section class="page-hero">
     <div class="container narrow center reveal">
-        <span class="eyebrow">ダウンロード · バージョン 2.5.0</span>
+        <span class="eyebrow">ダウンロード · バージョン 2.5.1</span>
         <h1>ModelPC VM をダウンロード</h1>
         <p class="lead">お使いの Mac のプロセッサに合ったバージョンを選んでください。わからない場合は、Apple メニュー → この Mac について で確認できます。</p>
     </div>
@@ -164,16 +164,16 @@
                 <span class="os-detected">お使いのシステム</span>
                 <h3>macOS · Apple Silicon</h3>
                 <p class="muted">M1、M2、M3、M4 以降</p>
-                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.1.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg" data-download="ModelPC-VM-2.5.1.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Apple Silicon 版をダウンロード                </a>
             </article>
                     <article class="download-card reveal" data-os="mac-intel">
                 <span class="os-detected">お使いのシステム</span>
                 <h3>macOS · Intel</h3>
                 <p class="muted">Intel プロセッサ搭載の Mac</p>
-                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.1.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg" data-download="ModelPC-VM-2.5.1.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel 版をダウンロード                </a>
             </article>
                 <article class="download-card download-soon reveal" id="windows" data-os="windows">
@@ -205,15 +205,36 @@
 
         <div class="release-filter reveal" role="search">
             <input type="search" placeholder="バージョンや変更内容を検索…" aria-label="バージョンを検索" data-release-search>
-            <span class="muted" data-release-count>4 件のバージョン</span>
+            <span class="muted" data-release-count>5 件のバージョン</span>
         </div>
 
         <ul class="release-list">
                             <li class="release reveal" data-release>
                     <div class="release-head">
                         <div class="release-title">
-                            <strong>v2.5.0</strong>
+                            <strong>v2.5.1</strong>
                             <span class="tag tag-new">最新</span>                            <span class="muted release-meta"><time datetime="2026-11-22">2026年11月22日</time> · 9 MB</span>
+                        </div>
+                        <div class="release-actions">
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg"
+                                   data-download="ModelPC-VM-2.5.1.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Apple Silicon                                </a>
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg"
+                                   data-download="ModelPC-VM-2.5.1.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
+                                                    </div>
+                    </div>
+                    <details class="release-notes" open>
+                        <summary>変更内容（2） <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <ul>
+                            <li>Windows 11 x64 のセットアップが「この PC では Windows 11 を実行できません」で止まらなくなりました。TPM、セキュアブート、CPU のチェックは自動的にスキップされます</li><li>セットアップでは「今すぐインストール」と「アップグレード／カスタム」の画面が省略されます。プロダクトキー、エディション、ディスクの画面は通常どおり表示されます</li>                        </ul>
+                    </details>
+                </li>
+                            <li class="release reveal" data-release>
+                    <div class="release-head">
+                        <div class="release-title">
+                            <strong>v2.5.0</strong>
+                                                        <span class="muted release-meta"><time datetime="2026-11-22">2026年11月22日</time> · 9 MB</span>
                         </div>
                         <div class="release-actions">
                                                             <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
@@ -224,7 +245,7 @@
                                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
                                                     </div>
                     </div>
-                    <details class="release-notes" open>
+                    <details class="release-notes" >
                         <summary>変更内容（7） <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
                             <li>通常版 Windows に対応：Intel/AMD 向けの x64・x86 版 Windows（Windows 7、8.1、10、11、Windows Server）を QEMU エミュレーションでインストールできるようになりました</li><li>ISO のアーキテクチャはファイルの中身から判定され、ウィザードが適切なエンジンを自動で選びます</li><li>QEMU がない場合は「QEMU をインストール」ボタンで Homebrew からインストールします</li><li>ARM64 システム（Windows 11 ARM、ARM Linux、macOS）は従来どおりネイティブ速度で動作します</li><li>すべての仮想マシンにシリアルコンソールタブ（ターミナル）を追加</li><li>バージョン番号が「情報」「設定」「お問い合わせ」に自動表示されます</li><li>2.4.1 のセキュリティ修正をすべて含みます</li>                        </ul>
@@ -340,7 +361,7 @@
     </div>
     <div class="container footer-bottom">
         <span>© 2026 ModelPC VM. 無断転載を禁じます。</span>
-        <span>バージョン 2.5.0</span>
+        <span>バージョン 2.5.1</span>
     </div>
 </footer>
 

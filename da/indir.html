@@ -152,7 +152,7 @@
 
 <section class="page-hero">
     <div class="container narrow center reveal">
-        <span class="eyebrow">Download · Version 2.5.0</span>
+        <span class="eyebrow">Download · Version 2.5.1</span>
         <h1>Download ModelPC VM</h1>
         <p class="lead">Vælg den version, der passer til din Macs processor. I tvivl? Apple-menuen → Om denne Mac.</p>
     </div>
@@ -164,16 +164,16 @@
                 <span class="os-detected">Dit system</span>
                 <h3>macOS · Apple Silicon</h3>
                 <p class="muted">M1, M2, M3, M4 og nyere</p>
-                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.1.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg" data-download="ModelPC-VM-2.5.1.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Download til Apple Silicon                </a>
             </article>
                     <article class="download-card reveal" data-os="mac-intel">
                 <span class="os-detected">Dit system</span>
                 <h3>macOS · Intel</h3>
                 <p class="muted">Mac-computere med Intel-processor</p>
-                <p class="file-meta"><code>ModelPC-VM-2.5.0.dmg</code> · Universal</p>
-                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg" data-download="ModelPC-VM-2.5.0.dmg">
+                <p class="file-meta"><code>ModelPC-VM-2.5.1.dmg</code> · Universal</p>
+                <a class="btn btn-ghost btn-block" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg" data-download="ModelPC-VM-2.5.1.dmg">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Download til Intel                </a>
             </article>
                 <article class="download-card download-soon reveal" id="windows" data-os="windows">
@@ -205,15 +205,36 @@
 
         <div class="release-filter reveal" role="search">
             <input type="search" placeholder="Søg i versioner eller ændringer…" aria-label="Søg i versioner" data-release-search>
-            <span class="muted" data-release-count>4 versioner</span>
+            <span class="muted" data-release-count>5 versioner</span>
         </div>
 
         <ul class="release-list">
                             <li class="release reveal" data-release>
                     <div class="release-head">
                         <div class="release-title">
-                            <strong>v2.5.0</strong>
+                            <strong>v2.5.1</strong>
                             <span class="tag tag-new">Nyeste</span>                            <span class="muted release-meta"><time datetime="2026-11-22">22. november 2026</time> · 9 MB</span>
+                        </div>
+                        <div class="release-actions">
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg"
+                                   data-download="ModelPC-VM-2.5.1.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Apple Silicon                                </a>
+                                                            <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.1/ModelPC-VM-2.5.1.dmg"
+                                   data-download="ModelPC-VM-2.5.1.dmg">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
+                                                    </div>
+                    </div>
+                    <details class="release-notes" open>
+                        <summary>Ændringer (2) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+                        <ul>
+                            <li>Installation af Windows 11 x64 stopper ikke længere med “Denne pc kan ikke køre Windows 11”: TPM-, Secure Boot- og CPU-kontrollen springes automatisk over</li><li>Installationen springer siderne “Installer nu” og “Opgrader / Brugerdefineret” over; siderne til produktnøgle, udgave og disk vises som normalt</li>                        </ul>
+                    </details>
+                </li>
+                            <li class="release reveal" data-release>
+                    <div class="release-head">
+                        <div class="release-title">
+                            <strong>v2.5.0</strong>
+                                                        <span class="muted release-meta"><time datetime="2026-11-22">22. november 2026</time> · 9 MB</span>
                         </div>
                         <div class="release-actions">
                                                             <a class="btn btn-ghost btn-sm" href="https://github.com/ModelPC/ModelPC-VM/releases/download/v2.5.0/ModelPC-VM-2.5.0.dmg"
@@ -224,7 +245,7 @@
                                     <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg> Intel                                </a>
                                                     </div>
                     </div>
-                    <details class="release-notes" open>
+                    <details class="release-notes" >
                         <summary>Ændringer (7) <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
                         <ul>
                             <li>Understøttelse af almindelig Windows: x64- og x86-Windows til Intel/AMD (Windows 7, 8.1, 10, 11 og Windows Server) kan nu installeres med QEMU-emulering</li><li>ISO’ens arkitektur læses fra selve filen, og guiden vælger selv den rigtige motor</li><li>Mangler QEMU, installerer appen det via Homebrew med knappen “Installer QEMU”</li><li>ARM64-systemer (Windows 11 ARM, ARM-Linux, macOS) kører stadig med native hastighed</li><li>Fane med seriel konsol til hver virtuel maskine (Terminal)</li><li>Versionsnummeret vises automatisk under Om, Indstillinger og Kontakt</li><li>Indeholder alle sikkerhedsrettelser fra 2.4.1</li>                        </ul>
@@ -340,7 +361,7 @@
     </div>
     <div class="container footer-bottom">
         <span>© 2026 ModelPC VM. Alle rettigheder forbeholdes.</span>
-        <span>Version 2.5.0</span>
+        <span>Version 2.5.1</span>
     </div>
 </footer>
 
