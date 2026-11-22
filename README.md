@@ -1,5 +1,7 @@
 # ModelPC VM
 
+<img width="1920" height="1080" alt="Ekran Resmi 2026-10-30 16 27 45" src="https://github.com/user-attachments/assets/2298d29a-89d8-4234-b5ad-c3ad18d9785a" />
+
 **Türkçe** · [English](README.en.md) · [Dansk](README.da.md)
 
 Apple Silicon Mac'lerde Linux, Windows 11 ARM ve macOS sanal makineleri oluşturup çalıştırmak için yazılmış, SwiftUI tabanlı bir sanal makine yöneticisi. Apple'ın yerleşik **Virtualization.framework**'ünü kullanır; ayrı bir hipervizör veya çekirdek uzantısı gerektirmez.
