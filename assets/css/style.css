@@ -176,6 +176,16 @@ code { font-size: .9em; background: var(--bg-alt); padding: 2px 6px; border-radi
         radial-gradient(600px 400px at 15% 30%, color-mix(in srgb, var(--primary) 18%, transparent), transparent 70%),
         radial-gradient(500px 380px at 85% 20%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%);
 }
+.hero-bg {
+    position: absolute; inset: 0; z-index: -2; pointer-events: none;
+    background: url("../img/hero-bg.jpg") center top / cover no-repeat;
+    opacity: .14;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 100%), linear-gradient(to right, rgba(0,0,0,.35) 0%, #000 55%);
+    -webkit-mask-composite: source-in; mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 100%), linear-gradient(to right, rgba(0,0,0,.35) 0%, #000 55%);
+    mask-composite: intersect;
+}
+:root[data-theme="dark"] .hero-bg { opacity: .3; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .hero-bg { opacity: .3; } }
 .hero-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center; }
 .badge {
     display: inline-flex; align-items: center; gap: 8px; margin-bottom: 20px;
